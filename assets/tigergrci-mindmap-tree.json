@@ -1,0 +1,2237 @@
+{
+  "title": "TigerGRCi - Privacy-aware · AI-driven · Continuous GRC",
+  "subtitle": "TigerGRCi is the privacy-aware, AI-driven platform for continuous multi-framework GRC - evidence, risk, and mappings under human control.",
+  "kids": [
+    {
+      "id": "product",
+      "label": "1. Product & value",
+      "summary": "TigerGRCi’s product value is continuous privacy-aware GRC that replaces spreadsheet crosswalks with defensible, multi-framework control of real risk and evidence.",
+      "kids": [
+        {
+          "id": "pillars",
+          "label": "Six value pillars",
+          "summary": "TigerGRCi stands on six pillars which are privacy-aware, AI-driven, continuous GRC, multi-framework, SCF cross-control, and lean delivery.",
+          "kids": [
+            {
+              "id": "p-priv",
+              "label": "Privacy-aware",
+              "summary": "TigerGRCi is privacy-aware by design: tenant isolation, local-first dictate, and evidence handling that never silently bleeds across programmes.",
+              "kids": [
+                {
+                  "id": "p-priv-rls",
+                  "label": "Tenant RLS floor at login"
+                },
+                {
+                  "id": "p-priv-stt",
+                  "label": "Local-first STT / dictate"
+                },
+                {
+                  "id": "p-priv-ev",
+                  "label": "Evidence classification paths"
+                },
+                {
+                  "id": "p-priv-scope",
+                  "label": "Scope-bounded workspace data"
+                },
+                {
+                  "id": "p-priv-nox",
+                  "label": "No silent cross-tenant bleed"
+                }
+              ]
+            },
+            {
+              "id": "p-ai",
+              "label": "AI-driven",
+              "summary": "TigerGRCi uses AI to accelerate mapping and briefing under human approval - assistive, never an unsupervised source of compliance truth.",
+              "kids": [
+                {
+                  "id": "p-ai-map",
+                  "label": "Hybrid mapping assist"
+                },
+                {
+                  "id": "p-ai-brief",
+                  "label": "Presenter brief assist"
+                },
+                {
+                  "id": "p-ai-hitl",
+                  "label": "Human-approved outputs only"
+                },
+                {
+                  "id": "p-ai-bound",
+                  "label": "Curated facts over model freestyle"
+                },
+                {
+                  "id": "p-ai-ollama",
+                  "label": "Optional local Ollama notes"
+                }
+              ]
+            },
+            {
+              "id": "p-cont",
+              "label": "Continuous GRC",
+              "summary": "TigerGRCi runs continuous GRC: live evidence, monitors, and programme state replace point-in-time spreadsheet campaigns.",
+              "kids": [
+                {
+                  "id": "p-cont-ev",
+                  "label": "Continuous evidence ledger"
+                },
+                {
+                  "id": "p-cont-mon",
+                  "label": "Compliance monitors"
+                },
+                {
+                  "id": "p-cont-ws",
+                  "label": "Always-on workspace programmes"
+                },
+                {
+                  "id": "p-cont-risk",
+                  "label": "Living risk & VAPT signals"
+                },
+                {
+                  "id": "p-cont-audit",
+                  "label": "Audit-ready without freeze weeks"
+                }
+              ]
+            },
+            {
+              "id": "p-mf",
+              "label": "Multi-framework",
+              "summary": "TigerGRCi is multi-framework: one control fabric serves ISO, NIST, SOC2, and peer packs without duplicate spreadsheet crosswalks.",
+              "kids": [
+                {
+                  "id": "p-mf-packs",
+                  "label": "Framework control packs"
+                },
+                {
+                  "id": "p-mf-map",
+                  "label": "Defensible crosswalk mappings"
+                },
+                {
+                  "id": "p-mf-assess",
+                  "label": "Shared assessment templates"
+                },
+                {
+                  "id": "p-mf-score",
+                  "label": "Per-framework score surfaces"
+                },
+                {
+                  "id": "p-mf-ver",
+                  "label": "Pinned framework versions"
+                }
+              ]
+            },
+            {
+              "id": "p-xctl",
+              "label": "Cross-control (SCF)",
+              "summary": "TigerGRCi centres SCF-style cross-control so one evidence set answers many frameworks without inventing parallel control universes.",
+              "kids": [
+                {
+                  "id": "p-xctl-scf",
+                  "label": "SCF / STRM mapping packs"
+                },
+                {
+                  "id": "p-xctl-reuse",
+                  "label": "One control · many frameworks"
+                },
+                {
+                  "id": "p-xctl-ev",
+                  "label": "Shared evidence attachment"
+                },
+                {
+                  "id": "p-xctl-gap",
+                  "label": "Gap view across packs"
+                },
+                {
+                  "id": "p-xctl-hitl",
+                  "label": "Analyst-confirmed links"
+                }
+              ]
+            },
+            {
+              "id": "p-lean",
+              "label": "Lean & pragmatic",
+              "summary": "TigerGRCi stays lean: sovereign self-host paths, truthful score caps, and operator workflows that favour audit reality over GRC theatre.",
+              "kids": [
+                {
+                  "id": "p-lean-host",
+                  "label": "Sovereign self-host option"
+                },
+                {
+                  "id": "p-lean-score",
+                  "label": "Truthful prove-this-score bar"
+                },
+                {
+                  "id": "p-lean-ops",
+                  "label": "Operator-first journeys"
+                },
+                {
+                  "id": "p-lean-no",
+                  "label": "No vanity auto-CAPA fiction"
+                },
+                {
+                  "id": "p-lean-tco",
+                  "label": "Pragmatic TCO over suite sprawl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "biz",
+          "label": "Business case",
+          "summary": "TigerGRCi’s business case is labour saved on crosswalks, faster audit readiness, fewer GRC tools, lower residual risk, and sovereign self-host TCO.",
+          "kids": [
+            {
+              "id": "b-labour",
+              "label": "Labour / crosswalk savings"
+            },
+            {
+              "id": "b-audit",
+              "label": "Audit readiness"
+            },
+            {
+              "id": "b-consol",
+              "label": "Tool consolidation"
+            },
+            {
+              "id": "b-risk",
+              "label": "Risk reduction"
+            },
+            {
+              "id": "b-sov",
+              "label": "Sovereign self-host TCO"
+            }
+          ]
+        },
+        {
+          "id": "doctrine",
+          "label": "Doctrine",
+          "summary": "TigerGRCi doctrine: Report Ready ≠ operating effectiveness ≠ auto-CAPA; scores stay truthful; mappings stay human-approved.",
+          "kids": [
+            {
+              "id": "d-rr",
+              "label": "Report Ready ≠ OE ≠ auto-CAPA"
+            },
+            {
+              "id": "d-truth",
+              "label": "Truthful scoring cap"
+            },
+            {
+              "id": "d-hitl",
+              "label": "Human-in-the-loop mappings"
+            }
+          ]
+        },
+        {
+          "id": "narrative",
+          "label": "Narrative views",
+          "summary": "TigerGRCi narrates value through a five-act briefing, prior-art contrast, and an ROI stream tied to real platform capabilities.",
+          "kids": [
+            {
+              "id": "n-5act",
+              "label": "Five-act briefing arc"
+            },
+            {
+              "id": "n-prior",
+              "label": "vs Prior art"
+            },
+            {
+              "id": "n-roi",
+              "label": "ROI value stream"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "label": "2. Enterprise hierarchy",
+      "summary": "TigerGRCi tenancy is Platform → Tenant → Company → Business Scope → Workspace - governance and execution never mix scores across programmes.",
+      "kids": [
+        {
+          "id": "tree",
+          "label": "Hierarchy",
+          "kids": [
+            {
+              "id": "h-plat",
+              "label": "Platform"
+            },
+            {
+              "id": "h-ten",
+              "label": "Tenant"
+            },
+            {
+              "id": "h-co",
+              "label": "Company / Facility"
+            },
+            {
+              "id": "h-scope",
+              "label": "Business Scope (governance)"
+            },
+            {
+              "id": "h-ws",
+              "label": "Workspace (execution)"
+            }
+          ]
+        },
+        {
+          "id": "boundaries",
+          "label": "Boundaries",
+          "kids": [
+            {
+              "id": "b-gov",
+              "label": "Scope vs Workspace split"
+            },
+            {
+              "id": "b-nocross",
+              "label": "No cross-programme scoring mix"
+            },
+            {
+              "id": "b-saas",
+              "label": "SaaS tenant floor at login"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "label": "3. Stack & deployment",
+      "summary": "TigerGRCi runs sovereign: Next.js 15, Express 5, Postgres RLS, Redis/WebSocket, Keycloak - Compose or Kubernetes, optional local Ollama, REACH outbound.",
+      "kids": [
+        {
+          "id": "runtime",
+          "label": "Runtime stack",
+          "kids": [
+            {
+              "id": "r-next",
+              "label": "Next.js 15 UI"
+            },
+            {
+              "id": "r-exp",
+              "label": "Express 5 API"
+            },
+            {
+              "id": "r-pg",
+              "label": "PostgreSQL + RLS"
+            },
+            {
+              "id": "r-redis",
+              "label": "Redis + WebSocket v2"
+            },
+            {
+              "id": "r-kc",
+              "label": "Keycloak OIDC"
+            },
+            {
+              "id": "r-ollama",
+              "label": "Optional Ollama"
+            },
+            {
+              "id": "r-reach",
+              "label": "REACH outbound agent"
+            }
+          ]
+        },
+        {
+          "id": "deploy",
+          "label": "Deploy options",
+          "kids": [
+            {
+              "id": "d-compose",
+              "label": "Docker Compose"
+            },
+            {
+              "id": "d-helm",
+              "label": "Helm / Kubernetes"
+            },
+            {
+              "id": "d-ci",
+              "label": "CI smoke workflows"
+            }
+          ]
+        },
+        {
+          "id": "c4views",
+          "label": "Architecture views",
+          "kids": [
+            {
+              "id": "c-ctx",
+              "label": "System context"
+            },
+            {
+              "id": "c-cont",
+              "label": "Containers / components"
+            },
+            {
+              "id": "c-net",
+              "label": "Network trust boundaries"
+            },
+            {
+              "id": "c-int",
+              "label": "Integrations (IdP/SIEM/VAPT/S3)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fabrics",
+      "label": "4. Four GRC fabrics",
+      "summary": "TigerGRCi is four fabrics-Mapping, Evidence, Risk, Regulatory Intelligence - one operating model, not four disconnected products.",
+      "kids": [
+        {
+          "id": "mapfab",
+          "label": "Mapping Fabric",
+          "kids": [
+            {
+              "id": "mf-ledger",
+              "label": "Crosswalk ledger"
+            },
+            {
+              "id": "mf-strm",
+              "label": "STRM hub-spoke"
+            },
+            {
+              "id": "mf-queue",
+              "label": "Review queue + receipts"
+            }
+          ]
+        },
+        {
+          "id": "evfab",
+          "label": "Evidence Fabric",
+          "kids": [
+            {
+              "id": "ef-art",
+              "label": "evidence_artifacts"
+            },
+            {
+              "id": "ef-ttl",
+              "label": "Fresh / aging / stale TTL"
+            },
+            {
+              "id": "ef-hash",
+              "label": "SHA-256 chain of custody"
+            }
+          ]
+        },
+        {
+          "id": "riskfab",
+          "label": "Risk Fabric",
+          "kids": [
+            {
+              "id": "rf-heat",
+              "label": "Heat maps + appetite"
+            },
+            {
+              "id": "rf-sig",
+              "label": "VAPT + CCM signals"
+            },
+            {
+              "id": "rf-kri",
+              "label": "KRIs"
+            }
+          ]
+        },
+        {
+          "id": "regfab",
+          "label": "Regulatory Intelligence",
+          "kids": [
+            {
+              "id": "rg-feed",
+              "label": "Feeds → relevance"
+            },
+            {
+              "id": "rg-scf",
+              "label": "SCF obligation expansion"
+            },
+            {
+              "id": "rg-gap",
+              "label": "Policy gap deltas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policyai",
+      "label": "5. Policy AI & mapping",
+      "summary": "TigerGRCi maps policy to controls with Hybrid RAG and PMCR provenance-human approve-first, never auto-CAPA from a design score.",
+      "kids": [
+        {
+          "id": "rag",
+          "label": "Hybrid RAG",
+          "kids": [
+            {
+              "id": "rag-s",
+              "label": "S = 0.5 embed + 0.35 BM25 + 0.15 hits"
+            },
+            {
+              "id": "rag-th",
+              "label": "Met ≥0.62 · Partial ≥0.50"
+            },
+            {
+              "id": "rag-llm",
+              "label": "Optional LLM validate"
+            }
+          ]
+        },
+        {
+          "id": "pmcr",
+          "label": "PMCR",
+          "kids": [
+            {
+              "id": "pm-gates",
+              "label": "Provenance gates"
+            },
+            {
+              "id": "pm-multi",
+              "label": "Multi-objective rank"
+            },
+            {
+              "id": "pm-rcpt",
+              "label": "Signed receipts"
+            }
+          ]
+        },
+        {
+          "id": "pipe",
+          "label": "Policy processing",
+          "kids": [
+            {
+              "id": "pp-up",
+              "label": "Upload PDF/TXT"
+            },
+            {
+              "id": "pp-zt",
+              "label": "ZT file gate"
+            },
+            {
+              "id": "pp-ocr",
+              "label": "Extract / OCR"
+            },
+            {
+              "id": "pp-rw",
+              "label": "Ransomware scan"
+            },
+            {
+              "id": "pp-rep",
+              "label": "Report → fabric / UI"
+            },
+            {
+              "id": "pp-capa",
+              "label": "Gaps → human CAPA"
+            },
+            {
+              "id": "pp-doc",
+              "label": "DOC-033 doctrine boundary"
+            },
+            {
+              "id": "pp-score",
+              "label": "See branch 13 Scoring architecture"
+            }
+          ]
+        },
+        {
+          "id": "aca",
+          "label": "Auto Control Applicability",
+          "kids": [
+            {
+              "id": "aca-pred",
+              "label": "Verified predicates"
+            },
+            {
+              "id": "aca-appr",
+              "label": "Approve-first scoping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccf",
+      "label": "6. Continuous & evidence",
+      "summary": "TigerGRCi proves continuous posture with 119 automated checks, evidence TTL bands, and dual design-vs-operating-effectiveness gauges.",
+      "kids": [
+        {
+          "id": "ccf-core",
+          "label": "CCF",
+          "kids": [
+            {
+              "id": "ccf-119",
+              "label": "119 automated checks"
+            },
+            {
+              "id": "ccf-7",
+              "label": "7 framework overlays"
+            },
+            {
+              "id": "ccf-dual",
+              "label": "Dual posture design vs OE"
+            }
+          ]
+        },
+        {
+          "id": "sched",
+          "label": "Scheduler",
+          "kids": [
+            {
+              "id": "sch-60",
+              "label": "60s tick"
+            },
+            {
+              "id": "sch-targets",
+              "label": "CCF · evidence · KRI · VAPT"
+            }
+          ]
+        },
+        {
+          "id": "excel",
+          "label": "Assessment Excel model",
+          "kids": [
+            {
+              "id": "ex-gds",
+              "label": "Graph Data Source lookups"
+            },
+            {
+              "id": "ex-mat",
+              "label": "Maturity 0-5 → gauges 0-100"
+            },
+            {
+              "id": "ex-tmpl",
+              "label": "Per-framework templates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "riskvapt",
+      "label": "7. Risk & VAPT",
+      "summary": "TigerGRCi scores residual cyber risk (EURMP/CRCE) and folds live VAPT findings into the same control and assurance fabric.",
+      "kids": [
+        {
+          "id": "eurmp",
+          "label": "EURMP / CRCE",
+          "kids": [
+            {
+              "id": "eu-f",
+              "label": "R = L × I × Π(1−Cj)"
+            },
+            {
+              "id": "eu-9",
+              "label": "Nine domain lenses"
+            },
+            {
+              "id": "eu-cyber",
+              "label": "CVSS × exposure weights"
+            }
+          ]
+        },
+        {
+          "id": "vapt",
+          "label": "VAPT intelligence",
+          "kids": [
+            {
+              "id": "v-sync",
+              "label": "Fingerprint sync"
+            },
+            {
+              "id": "v-diff",
+              "label": "Scan diff new/fixed/regressed"
+            },
+            {
+              "id": "v-map",
+              "label": "Vuln ↔ control mapping"
+            },
+            {
+              "id": "v-air",
+              "label": "AIR executive reports"
+            },
+            {
+              "id": "v-bfs",
+              "label": "Attack-path BFS"
+            }
+          ]
+        },
+        {
+          "id": "assure",
+          "label": "Assurance",
+          "kids": [
+            {
+              "id": "a-uni",
+              "label": "Unified posture report"
+            },
+            {
+              "id": "a-portal",
+              "label": "Portal / pack exports"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sectrust",
+      "label": "8. Security & Trust",
+      "summary": "TigerGRCi enforces Zero-Trust tenancy (JWT floor, RLS, RBAC, OIDC) and publishes real posture through Trust Center - not trust-by-brochure.",
+      "kids": [
+        {
+          "id": "iam",
+          "label": "IAM & tenancy",
+          "kids": [
+            {
+              "id": "i-jwt",
+              "label": "JWT tenant floor"
+            },
+            {
+              "id": "i-rls",
+              "label": "PostgreSQL RLS"
+            },
+            {
+              "id": "i-rbac",
+              "label": "8 RBAC roles"
+            },
+            {
+              "id": "i-oidc",
+              "label": "OIDC SSO"
+            }
+          ]
+        },
+        {
+          "id": "zt",
+          "label": "Zero-Trust fabric",
+          "kids": [
+            {
+              "id": "zt-gate",
+              "label": "File gate / quarantine"
+            },
+            {
+              "id": "zt-step",
+              "label": "Step-up decisions"
+            },
+            {
+              "id": "zt-hard",
+              "label": "Four-phase hardening"
+            }
+          ]
+        },
+        {
+          "id": "trust",
+          "label": "Trust Center",
+          "kids": [
+            {
+              "id": "tc-pub",
+              "label": "Customer transparency"
+            },
+            {
+              "id": "tc-xdr",
+              "label": "XDR / sensor / SEG / CSPM"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "label": "Privacy hub",
+          "kids": [
+            {
+              "id": "pr-ropa",
+              "label": "RoPA / DPIA / DSR"
+            },
+            {
+              "id": "pr-local",
+              "label": "Local AI option"
+            },
+            {
+              "id": "pr-ethics",
+              "label": "Ethics / COI / gifts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflows",
+      "label": "9. Master workflows",
+      "summary": "TigerGRCi’s master spine is upload → Zero-Trust gate → analyze → map → human review → approve/attest-Report Ready never equals OE.",
+      "kids": [
+        {
+          "id": "doctrine-e2e",
+          "label": "Aligned to doctrine workflow)",
+          "kids": [
+            {
+              "id": "de-spine",
+              "label": "Locked boundary spine",
+              "kids": [
+                {
+                  "id": "de-up",
+                  "label": "Upload"
+                },
+                {
+                  "id": "de-zt",
+                  "label": "Zero-trust gate"
+                },
+                {
+                  "id": "de-ext",
+                  "label": "Extract and version"
+                },
+                {
+                  "id": "de-an",
+                  "label": "Analyze vs enabled controls"
+                },
+                {
+                  "id": "de-rep",
+                  "label": "Report design alignment"
+                },
+                {
+                  "id": "de-map",
+                  "label": "Persist Mapping Fabric / PMCR"
+                },
+                {
+                  "id": "de-rev",
+                  "label": "Human review"
+                },
+                {
+                  "id": "de-appr",
+                  "label": "Approve"
+                },
+                {
+                  "id": "de-att",
+                  "label": "Attest"
+                }
+              ]
+            },
+            {
+              "id": "de-status",
+              "label": "Canonical status dimensions",
+              "kids": [
+                {
+                  "id": "ds-life",
+                  "label": "Lifecycle: Draft→…→Active→Retired"
+                },
+                {
+                  "id": "ds-anal",
+                  "label": "Analysis: Queued→…→Report Ready"
+                },
+                {
+                  "id": "ds-gov",
+                  "label": "Governance: Not Reviewed→Attested"
+                },
+                {
+                  "id": "ds-ctl",
+                  "label": "Control: Met|Partial|Gap|N/A|Insuff."
+                }
+              ]
+            },
+            {
+              "id": "de-rules",
+              "label": "Mandatory doctrine rules",
+              "kids": [
+                {
+                  "id": "dr-rr",
+                  "label": "Report Ready ≠ OE ≠ compliant"
+                },
+                {
+                  "id": "dr-design",
+                  "label": "Analysis = design alignment only"
+                },
+                {
+                  "id": "dr-gap",
+                  "label": "Gaps advisory - never auto-CAPA"
+                },
+                {
+                  "id": "dr-human",
+                  "label": "CAPA requires explicit human action"
+                },
+                {
+                  "id": "dr-snap",
+                  "label": "Re-analyze = new immutable snapshot"
+                },
+                {
+                  "id": "dr-prove",
+                  "label": "Prove this score reproducibility"
+                }
+              ]
+            },
+            {
+              "id": "de-own",
+              "label": "Gap ownership planes",
+              "kids": [
+                {
+                  "id": "do-pg",
+                  "label": "Policy gap → report / PMCR"
+                },
+                {
+                  "id": "do-mg",
+                  "label": "Mapping gap → Mapping Fabric"
+                },
+                {
+                  "id": "do-eg",
+                  "label": "Impl. evidence → Evidence/CCF"
+                },
+                {
+                  "id": "do-capa",
+                  "label": "CAPA → Findings / My Work"
+                }
+              ]
+            },
+            {
+              "id": "de-done",
+              "label": "Definition of done",
+              "kids": [
+                {
+                  "id": "dd-an",
+                  "label": "Analyzed = report persisted"
+                },
+                {
+                  "id": "dd-mp",
+                  "label": "Mapped = fabric/PMCR receipts"
+                },
+                {
+                  "id": "dd-rv",
+                  "label": "Reviewed = human evaluated"
+                },
+                {
+                  "id": "dd-at",
+                  "label": "Approved/Attested = governance recorded"
+                },
+                {
+                  "id": "dd-ac",
+                  "label": "Active = policy effective"
+                },
+                {
+                  "id": "dd-rm",
+                  "label": "Remediated = CAPA closed + revalidated"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2e-diagram",
+          "label": "End-to-end diagram",
+          "kids": [
+            {
+              "id": "ed-intake",
+              "label": "Intake & trust",
+              "kids": [
+                {
+                  "id": "edi-up",
+                  "label": "POST /policies/upload"
+                },
+                {
+                  "id": "edi-zt",
+                  "label": "ZT + file gate / magic bytes"
+                },
+                {
+                  "id": "edi-ocr",
+                  "label": "Extract + OCR"
+                },
+                {
+                  "id": "edi-rw",
+                  "label": "Ransomware scan"
+                },
+                {
+                  "id": "edi-sha",
+                  "label": "SHA-256 retain + 201 analyzing"
+                }
+              ]
+            },
+            {
+              "id": "ed-anal",
+              "label": "Background analysis",
+              "kids": [
+                {
+                  "id": "eda-chunk",
+                  "label": "Chunk + Hybrid RAG"
+                },
+                {
+                  "id": "eda-llm",
+                  "label": "Optional LLM validate"
+                },
+                {
+                  "id": "eda-heur",
+                  "label": "Heuristic / RAG-only path"
+                },
+                {
+                  "id": "eda-score",
+                  "label": "Compliance report scores"
+                },
+                {
+                  "id": "eda-map",
+                  "label": "controls_mapped persist"
+                }
+              ]
+            },
+            {
+              "id": "ed-out",
+              "label": "Outputs & UI lifecycle",
+              "kids": [
+                {
+                  "id": "edo-fab",
+                  "label": "Mapping Fabric ledger"
+                },
+                {
+                  "id": "edo-pmcr",
+                  "label": "Clause graph + PMCR"
+                },
+                {
+                  "id": "edo-ws",
+                  "label": "WebSocket progress complete"
+                },
+                {
+                  "id": "edo-ui",
+                  "label": "UI policy detail report"
+                },
+                {
+                  "id": "edo-life",
+                  "label": "submit → approve → attest"
+                },
+                {
+                  "id": "edo-ev",
+                  "label": "Evidence Hub sync (artifact)"
+                },
+                {
+                  "id": "edo-capa",
+                  "label": "Gaps → human CAPA (not auto)"
+                }
+              ]
+            },
+            {
+              "id": "ed-sep",
+              "label": "Separated OE plane",
+              "kids": [
+                {
+                  "id": "eds-ev",
+                  "label": "Evidence Hub TTL bands"
+                },
+                {
+                  "id": "eds-mon",
+                  "label": "Monitors / CCM"
+                },
+                {
+                  "id": "eds-ccf",
+                  "label": "CCF continuous checks"
+                },
+                {
+                  "id": "eds-vapt",
+                  "label": "VAPT implementation proof"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "master-e2e",
+          "label": "Master workflow",
+          "kids": [
+            {
+              "id": "mw-1",
+              "label": "1. Collect",
+              "kids": [
+                {
+                  "id": "mw1-u",
+                  "label": "Human uploads"
+                },
+                {
+                  "id": "mw1-ag",
+                  "label": "Endpoint agents"
+                },
+                {
+                  "id": "mw1-cn",
+                  "label": "Cloud connectors / S3"
+                },
+                {
+                  "id": "mw1-mn",
+                  "label": "Compliance monitors / CCM"
+                },
+                {
+                  "id": "mw1-vp",
+                  "label": "VAPT scans"
+                },
+                {
+                  "id": "mw1-pl",
+                  "label": "Policies / mapping / PMCR"
+                },
+                {
+                  "id": "mw1-cf",
+                  "label": "CCF continuous checks"
+                }
+              ]
+            },
+            {
+              "id": "mw-2",
+              "label": "2. Gate and ledger",
+              "kids": [
+                {
+                  "id": "mw2-zt",
+                  "label": "Zero-trust file gate"
+                },
+                {
+                  "id": "mw2-ef",
+                  "label": "evidence_artifacts fabric"
+                },
+                {
+                  "id": "mw2-fr",
+                  "label": "Freshness / TTL / stale alerts"
+                }
+              ]
+            },
+            {
+              "id": "mw-3",
+              "label": "3. Link",
+              "kids": [
+                {
+                  "id": "mw3-ctl",
+                  "label": "framework + control_id"
+                },
+                {
+                  "id": "mw3-asm",
+                  "label": "Assessment evidence"
+                },
+                {
+                  "id": "mw3-pol",
+                  "label": "Policy mappings / receipts"
+                },
+                {
+                  "id": "mw3-find",
+                  "label": "Findings + case evidence"
+                }
+              ]
+            },
+            {
+              "id": "mw-4",
+              "label": "4. Gap becomes work",
+              "kids": [
+                {
+                  "id": "mw4-capa",
+                  "label": "Findings + CAPA"
+                },
+                {
+                  "id": "mw4-mrem",
+                  "label": "Monitor remediation items"
+                },
+                {
+                  "id": "mw4-crem",
+                  "label": "CCF remediation items"
+                },
+                {
+                  "id": "mw4-vrem",
+                  "label": "VAPT vuln remediation"
+                },
+                {
+                  "id": "mw4-myw",
+                  "label": "My Work / user tasks"
+                }
+              ]
+            },
+            {
+              "id": "mw-5",
+              "label": "5. Close",
+              "kids": [
+                {
+                  "id": "mw5-fix",
+                  "label": "Fix in environment"
+                },
+                {
+                  "id": "mw5-close",
+                  "label": "CAPA closed / item resolved"
+                }
+              ]
+            },
+            {
+              "id": "mw-6",
+              "label": "6. Re-check",
+              "kids": [
+                {
+                  "id": "mw6-sch",
+                  "label": "Scheduler ticks"
+                },
+                {
+                  "id": "mw6-mn",
+                  "label": "→ Monitors / CCM"
+                },
+                {
+                  "id": "mw6-cf",
+                  "label": "→ CCF"
+                },
+                {
+                  "id": "mw6-ef",
+                  "label": "→ Evidence fabric"
+                },
+                {
+                  "id": "mw6-fr",
+                  "label": "→ Freshness / stale"
+                },
+                {
+                  "id": "mw6-loop",
+                  "label": "Continuous loop back to Collect"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "packs",
+          "label": "Exports & packs",
+          "kids": [
+            {
+              "id": "pk-board",
+              "label": "Board pack PDF/PPTX/ZIP"
+            },
+            {
+              "id": "pk-audit",
+              "label": "Audit evidence ZIP"
+            },
+            {
+              "id": "pk-pol",
+              "label": "Policy workpaper / crosswalk"
+            },
+            {
+              "id": "pk-own",
+              "label": "Ownership NOTICE stamps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gui",
+      "label": "10. GUI & journeys",
+      "summary": "TigerGRCi’s AppShell is the GRC operating cockpit - dashboard to Trust Center - for CIO, CFO, auditor, and assurance journeys on one tenancy model.",
+      "kids": [
+        {
+          "id": "shell",
+          "label": "AppShell IA",
+          "kids": [
+            {
+              "id": "g-dash",
+              "label": "/dashboard"
+            },
+            {
+              "id": "g-gov",
+              "label": "Governance"
+            },
+            {
+              "id": "g-risk",
+              "label": "/risk/dashboard"
+            },
+            {
+              "id": "g-ccf",
+              "label": "/compliance/continuous"
+            },
+            {
+              "id": "g-map",
+              "label": "/compliance/mapping-fabric"
+            },
+            {
+              "id": "g-vapt",
+              "label": "/assurance/vapt"
+            },
+            {
+              "id": "g-pol",
+              "label": "/policies"
+            },
+            {
+              "id": "g-my",
+              "label": "/my-work"
+            },
+            {
+              "id": "g-tc",
+              "label": "Trust Center"
+            }
+          ]
+        },
+        {
+          "id": "audiences",
+          "label": "Audience journeys",
+          "kids": [
+            {
+              "id": "au-cio",
+              "label": "CIO / CISO path"
+            },
+            {
+              "id": "au-cfo",
+              "label": "CFO / COO path"
+            },
+            {
+              "id": "au-aud",
+              "label": "Auditor path"
+            },
+            {
+              "id": "au-prof",
+              "label": "Academic / thesis path"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catalog",
+      "label": "11. Catalog & frameworks",
+      "summary": "TigerGRCi’s catalog is 3,324 controls on an SCF hub - SOC2, ISO, NIST, PCI, HIPAA, GDPR, CIS, COBIT, and BB packs in one crosswalk plane.",
+      "kids": [
+        {
+          "id": "facts",
+          "label": "Scale facts",
+          "kids": [
+            {
+              "id": "f-3324",
+              "label": "Unified catalog 3,324"
+            },
+            {
+              "id": "f-scf",
+              "label": "SCF hub 1,468"
+            },
+            {
+              "id": "f-csf",
+              "label": "NIST CSF 2.0 · 106"
+            },
+            {
+              "id": "f-ccf",
+              "label": "CCF checks 119"
+            }
+          ]
+        },
+        {
+          "id": "fws",
+          "label": "Framework packs",
+          "kids": [
+            {
+              "id": "fw-core",
+              "label": "SOC2 · ISO · HIPAA · GDPR · PCI"
+            },
+            {
+              "id": "fw-nist",
+              "label": "NIST 800-53 · AI RMF · CSF"
+            },
+            {
+              "id": "fw-cobit",
+              "label": "COBIT 2019 · CIS v8"
+            },
+            {
+              "id": "fw-bb",
+              "label": "BB ICT · CSF · Cloud"
+            }
+          ]
+        },
+        {
+          "id": "dataarch",
+          "label": "Data architecture",
+          "kids": [
+            {
+              "id": "da-erd",
+              "label": "Tenant / policy / control / evidence ERD"
+            },
+            {
+              "id": "da-ws",
+              "label": "WebSocket topic map"
+            },
+            {
+              "id": "da-own",
+              "label": "Product vs tenant vs standards IP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ops",
+      "label": "12. Ops, eval & docs",
+      "summary": "TigerGRCi proves itself with CI evals, SHA-256 export receipts, and a documentation spine that can defend every major product claim.",
+      "kids": [
+        {
+          "id": "opseng",
+          "label": "Engineering ops",
+          "kids": [
+            {
+              "id": "o-ci",
+              "label": "CI / smoke tests"
+            },
+            {
+              "id": "o-obs",
+              "label": "Observability / audit_log"
+            },
+            {
+              "id": "o-dr",
+              "label": "DR / backup profiles"
+            },
+            {
+              "id": "o-exp",
+              "label": "document.export SHA-256 receipts"
+            }
+          ]
+        },
+        {
+          "id": "eval",
+          "label": "Evaluation",
+          "kids": [
+            {
+              "id": "e-map",
+              "label": "Control Mapping Search eval"
+            },
+            {
+              "id": "e-pmcr",
+              "label": "PMCR eval"
+            },
+            {
+              "id": "e-xdr",
+              "label": "Trust Center XDR eval"
+            }
+          ]
+        },
+        {
+          "id": "docs",
+          "label": "Documentation",
+          "kids": [
+            {
+              "id": "doc-canon",
+              "label": "Canonical presentation (~37)"
+            },
+            {
+              "id": "doc-idx",
+              "label": "DOCUMENTATION_INDEX"
+            },
+            {
+              "id": "doc-alg",
+              "label": "Algorithms register / thesis"
+            },
+            {
+              "id": "doc-mm",
+              "label": "This mind map (regenerable)"
+            }
+          ]
+        },
+        {
+          "id": "formal",
+          "label": "Formal notations",
+          "kids": [
+            {
+              "id": "fn-c4",
+              "label": "C4 / ArchiMate / TOGAF"
+            },
+            {
+              "id": "fn-uml",
+              "label": "UML / BPMN / DFD"
+            },
+            {
+              "id": "fn-state",
+              "label": "State machines (policy / CAPA / TTL)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scoring",
+      "label": "13. Scoring architecture",
+      "summary": "TigerGRCi scoring separates design alignment from operating effectiveness - and caps every displayed score under a truthful, reproducible prove-this-score bar.",
+      "kids": [
+        {
+          "id": "sc-doc",
+          "label": "Doctrine of scores",
+          "kids": [
+            {
+              "id": "scd-design",
+              "label": "Design alignment ≠ operating OE"
+            },
+            {
+              "id": "scd-rr",
+              "label": "Report Ready ≠ OE ≠ auto-CAPA"
+            },
+            {
+              "id": "scd-truth",
+              "label": "Truthful display score cap"
+            },
+            {
+              "id": "scd-prove",
+              "label": "Prove this score / provenance"
+            },
+            {
+              "id": "scd-sep",
+              "label": "Scores ≠ lifecycle / governance status"
+            }
+          ]
+        },
+        {
+          "id": "sc-pipe",
+          "label": "Stage pipeline",
+          "kids": [
+            {
+              "id": "scp-scope",
+              "label": "1 Scope - Auto applicability"
+            },
+            {
+              "id": "scp-rag",
+              "label": "2 Retrieve - Hybrid RAG S_hybrid"
+            },
+            {
+              "id": "scp-pmcr",
+              "label": "3 Rank/route - PMCR S + gates"
+            },
+            {
+              "id": "scp-des",
+              "label": "4 Design - Assessment / NIST gauges"
+            },
+            {
+              "id": "scp-ccf",
+              "label": "5 Operate - CCF pass rate"
+            },
+            {
+              "id": "scp-ev",
+              "label": "6 Evidence - TTL bands (+ PMCR E)"
+            },
+            {
+              "id": "scp-risk",
+              "label": "7 Risk - CRCE / VAPT BR / KRIs"
+            },
+            {
+              "id": "scp-cap",
+              "label": "8 Capstone - Dual / Unified / Truthful"
+            }
+          ]
+        },
+        {
+          "id": "sc-holistic",
+          "label": "Holistic scoring workflow",
+          "kids": [
+            {
+              "id": "sh-0",
+              "label": "0. Inputs enter the scoring plane",
+              "kids": [
+                {
+                  "id": "sh0-pol",
+                  "label": "Policy text / PDF (ZT-gated)"
+                },
+                {
+                  "id": "sh0-cat",
+                  "label": "Control catalog + STRM packs"
+                },
+                {
+                  "id": "sh0-sig",
+                  "label": "Live signals: monitors · CCF · VAPT · agents"
+                },
+                {
+                  "id": "sh0-asm",
+                  "label": "Human assessment maturity answers"
+                },
+                {
+                  "id": "sh0-tool",
+                  "label": "Tools: upload API · connectors · REACH · surveys"
+                }
+              ]
+            },
+            {
+              "id": "sh-1",
+              "label": "1. Scope before score",
+              "kids": [
+                {
+                  "id": "sh1-what",
+                  "label": "Decide in_scope / N/A / needs_info"
+                },
+                {
+                  "id": "sh1-tech",
+                  "label": "Technique: verified org-fact predicates"
+                },
+                {
+                  "id": "sh1-tool",
+                  "label": "Tool: Auto Control Applicability service"
+                },
+                {
+                  "id": "sh1-ai",
+                  "label": "AI: none (deterministic rules)"
+                },
+                {
+                  "id": "sh1-hum",
+                  "label": "Human: approve-first scoping"
+                },
+                {
+                  "id": "sh1-out",
+                  "label": "Output: scoped control set for scoring"
+                }
+              ]
+            },
+            {
+              "id": "sh-2",
+              "label": "2. Retrieve candidates (Hybrid RAG)",
+              "kids": [
+                {
+                  "id": "sh2-what",
+                  "label": "Chunk policy → rank catalog controls"
+                },
+                {
+                  "id": "sh2-f",
+                  "label": "Score S = 0.5 embed + 0.35 BM25 + 0.15 hits"
+                },
+                {
+                  "id": "sh2-tech",
+                  "label": "Techniques: BM25 · cosine embed · keyword/atom gates"
+                },
+                {
+                  "id": "sh2-tool",
+                  "label": "Tools: hybridRagService · controls.json · optional Ollama embed"
+                },
+                {
+                  "id": "sh2-ai",
+                  "label": "AI: embeddings (+ optional local Ollama)"
+                },
+                {
+                  "id": "sh2-ev",
+                  "label": "Evidence: excerpts · spans · mandate language"
+                },
+                {
+                  "id": "sh2-out",
+                  "label": "Output: ranked hits → Met / Partial / Gap labels"
+                }
+              ]
+            },
+            {
+              "id": "sh-3",
+              "label": "3. Defensible rank & route (PMCR)",
+              "kids": [
+                {
+                  "id": "sh3-what",
+                  "label": "Multi-objective score + provenance hard gate"
+                },
+                {
+                  "id": "sh3-f",
+                  "label": "S = weighted L·M·F·E·P·C·H − U − X"
+                },
+                {
+                  "id": "sh3-tech",
+                  "label": "Techniques: weighted sum · span-verify · conflict penalties"
+                },
+                {
+                  "id": "sh3-tool",
+                  "label": "Tools: pmcrService · clause graph · HMAC receipts"
+                },
+                {
+                  "id": "sh3-ai",
+                  "label": "AI: optional LLM rationale (cannot bypass gates)"
+                },
+                {
+                  "id": "sh3-hum",
+                  "label": "Human: auto_accept / human_review / SME / reject"
+                },
+                {
+                  "id": "sh3-out",
+                  "label": "Output: route + signed receipt → Mapping Fabric"
+                }
+              ]
+            },
+            {
+              "id": "sh-4",
+              "label": "4. Design-alignment report",
+              "kids": [
+                {
+                  "id": "sh4-what",
+                  "label": "Roll control results into policy report %"
+                },
+                {
+                  "id": "sh4-f",
+                  "label": "~90% coverage + 10% evidence softener"
+                },
+                {
+                  "id": "sh4-tech",
+                  "label": "Technique: coverage-first rubric (design only)"
+                },
+                {
+                  "id": "sh4-tool",
+                  "label": "Tools: policyComplianceEngine · UI Prove this score"
+                },
+                {
+                  "id": "sh4-ai",
+                  "label": "AI: optional LLM justifications"
+                },
+                {
+                  "id": "sh4-out",
+                  "label": "Output: Report Ready (≠ OE ≠ CAPA)"
+                }
+              ]
+            },
+            {
+              "id": "sh-5",
+              "label": "5. Parallel design path - assessment gauges",
+              "kids": [
+                {
+                  "id": "sh5-what",
+                  "label": "Human maturity 0 - 5 → category/function gauges"
+                },
+                {
+                  "id": "sh5-f",
+                  "label": "Function = ROUND(20 × AVG(categories)) → 0 - 100"
+                },
+                {
+                  "id": "sh5-tech",
+                  "label": "Techniques: VLOOKUP maturity · XLOOKUP importance bands"
+                },
+                {
+                  "id": "sh5-tool",
+                  "label": "Tools: NIST survey sheets · Graph Data Source · Excel"
+                },
+                {
+                  "id": "sh5-ai",
+                  "label": "AI: none"
+                },
+                {
+                  "id": "sh5-hum",
+                  "label": "Human: Score dropdowns + Function Prioritisation"
+                },
+                {
+                  "id": "sh5-out",
+                  "label": "Output: design posture for dual blend"
+                }
+              ]
+            },
+            {
+              "id": "sh-6",
+              "label": "6. Parallel OE path - CCF + monitors",
+              "kids": [
+                {
+                  "id": "sh6-what",
+                  "label": "Evaluate live operating checks"
+                },
+                {
+                  "id": "sh6-f",
+                  "label": "pass_rate = passing / scorable × 100"
+                },
+                {
+                  "id": "sh6-tech",
+                  "label": "Techniques: rule thresholds · section rollups"
+                },
+                {
+                  "id": "sh6-tool",
+                  "label": "Tools: ccfService · Fleet/IdP/SIEM/VAPT/agent feeds"
+                },
+                {
+                  "id": "sh6-ai",
+                  "label": "AI: none (deterministic OE)"
+                },
+                {
+                  "id": "sh6-out",
+                  "label": "Output: operating posture + fail/at_risk items"
+                }
+              ]
+            },
+            {
+              "id": "sh-7",
+              "label": "7. Evidence freshness scoring",
+              "kids": [
+                {
+                  "id": "sh7-what",
+                  "label": "Band artifacts: fresh / aging / stale"
+                },
+                {
+                  "id": "sh7-f",
+                  "label": "fresh ≤0.5×TTL; aging ≤TTL; else stale"
+                },
+                {
+                  "id": "sh7-tech",
+                  "label": "Technique: per-source TTL defaults"
+                },
+                {
+                  "id": "sh7-tool",
+                  "label": "Tools: evidenceFreshnessService · scheduler"
+                },
+                {
+                  "id": "sh7-ai",
+                  "label": "AI: none"
+                },
+                {
+                  "id": "sh7-out",
+                  "label": "Output: freshness bands + PMCR E sub-score"
+                }
+              ]
+            },
+            {
+              "id": "sh-8",
+              "label": "8. Risk plane scoring",
+              "kids": [
+                {
+                  "id": "sh8-crce",
+                  "label": "CRCE: R = L × I × Π(1−Cj)"
+                },
+                {
+                  "id": "sh8-vapt",
+                  "label": "VAPT BR from CVSS × exposure × weights"
+                },
+                {
+                  "id": "sh8-air",
+                  "label": "AIR posture 0 - 100 + A - F grades"
+                },
+                {
+                  "id": "sh8-tech",
+                  "label": "Techniques: 5×5 matrix · BFS attack paths · KRIs"
+                },
+                {
+                  "id": "sh8-tool",
+                  "label": "Tools: commonRiskCalculationEngine · vaptRiskScoring · KRI"
+                },
+                {
+                  "id": "sh8-hum",
+                  "label": "Human: L/I validation · accept risk / remediate"
+                },
+                {
+                  "id": "sh8-out",
+                  "label": "Output: residual risk + vuln priorities"
+                }
+              ]
+            },
+            {
+              "id": "sh-9",
+              "label": "9. Capstone blend & display honesty",
+              "kids": [
+                {
+                  "id": "sh9-dual",
+                  "label": "Dual posture = 0.4 design + 0.6 operating"
+                },
+                {
+                  "id": "sh9-uni",
+                  "label": "Unified assurance = 55% VAPT + 45% monitors"
+                },
+                {
+                  "id": "sh9-truth",
+                  "label": "Truthful display = min(raw, assuranceConfidence)"
+                },
+                {
+                  "id": "sh9-tech",
+                  "label": "Techniques: weighted blends · confidence mix"
+                },
+                {
+                  "id": "sh9-tool",
+                  "label": "Tools: dualPosture · assuranceReport · truthfulScoring"
+                },
+                {
+                  "id": "sh9-out",
+                  "label": "Output: dashboard / board pack headline scores"
+                }
+              ]
+            },
+            {
+              "id": "sh-10",
+              "label": "10. Loop - re-score continuously",
+              "kids": [
+                {
+                  "id": "sh10-sch",
+                  "label": "60s scheduler re-ticks CCF · TTL · KRI · VAPT sync"
+                },
+                {
+                  "id": "sh10-re",
+                  "label": "Policy re-analyze = new immutable snapshot"
+                },
+                {
+                  "id": "sh10-capa",
+                  "label": "Human CAPA close → revalidate assessment"
+                },
+                {
+                  "id": "sh10-eval",
+                  "label": "Offline eval harnesses guard quality gates"
+                },
+                {
+                  "id": "sh10-out",
+                  "label": "Output: living scores - not audit-season snapshots"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-pol",
+          "label": "Policy and mapping scores",
+          "kids": [
+            {
+              "id": "scp-hyb",
+              "label": "Hybrid RAG",
+              "kids": [
+                {
+                  "id": "sch-f",
+                  "label": "S = 0.5 embed + 0.35 BM25 + 0.15 hits"
+                },
+                {
+                  "id": "sch-ev",
+                  "label": "Eval thresholds Met 0.62 / Partial 0.50"
+                },
+                {
+                  "id": "sch-live",
+                  "label": "Live env may use lower met/partial + atom gates"
+                },
+                {
+                  "id": "sch-bm25",
+                  "label": "Okapi BM25 k1=1.2 b=0.75"
+                },
+                {
+                  "id": "sch-kw",
+                  "label": "Keyword / phrase / ID / atom gates"
+                },
+                {
+                  "id": "sch-abl",
+                  "label": "Ablation: bm25 / embed / hybrid / rerank"
+                }
+              ]
+            },
+            {
+              "id": "scp-rep",
+              "label": "Policy compliance report",
+              "kids": [
+                {
+                  "id": "scr-cov",
+                  "label": "Overall ~90% coverage + 10% evidence"
+                },
+                {
+                  "id": "scr-lbl",
+                  "label": "fully / partially / not addressed"
+                },
+                {
+                  "id": "scr-des",
+                  "label": "Design alignment only (not OE)"
+                }
+              ]
+            },
+            {
+              "id": "scp-pm",
+              "label": "PMCR multi-objective",
+              "kids": [
+                {
+                  "id": "spm-s",
+                  "label": "S = weighted L M F E P C H − U − X"
+                },
+                {
+                  "id": "spm-e",
+                  "label": "E = 0.5A + 0.3T + 0.2V freshness"
+                },
+                {
+                  "id": "spm-auto",
+                  "label": "auto_accept if S/E/P high + provenance_ok"
+                },
+                {
+                  "id": "spm-hum",
+                  "label": "human_review / SME / reject routes"
+                },
+                {
+                  "id": "spm-hmac",
+                  "label": "HMAC signed mapping receipts"
+                }
+              ]
+            },
+            {
+              "id": "scp-bb",
+              "label": "BB Mapping Pioneer",
+              "kids": [
+                {
+                  "id": "sbb-boost",
+                  "label": "Post-rank boosts for BB frameworks"
+                },
+                {
+                  "id": "sbb-w",
+                  "label": "Learned pioneer weights"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-cont",
+          "label": "Continuous and assessment",
+          "kids": [
+            {
+              "id": "scc-ccf",
+              "label": "CCF",
+              "kids": [
+                {
+                  "id": "scc-pr",
+                  "label": "pass_rate = passing / scorable × 100"
+                },
+                {
+                  "id": "scc-ex",
+                  "label": "Fleet≥80 · MFA≥95 · access≥90"
+                },
+                {
+                  "id": "scc-119",
+                  "label": "119 automated checks · OE plane"
+                }
+              ]
+            },
+            {
+              "id": "scc-nist",
+              "label": "NIST / assessment gauges",
+              "kids": [
+                {
+                  "id": "scn-05",
+                  "label": "Maturity labels score 0 - 5"
+                },
+                {
+                  "id": "scn-avg",
+                  "label": "Category = AVG(subcategory)"
+                },
+                {
+                  "id": "scn-100",
+                  "label": "Function = ROUND(20 × AVG) → 0 - 100"
+                },
+                {
+                  "id": "scn-gds",
+                  "label": "Graph Data Source VLOOKUP / XLOOKUP"
+                },
+                {
+                  "id": "scn-imp",
+                  "label": "Importance bands reshape gauge rings"
+                }
+              ]
+            },
+            {
+              "id": "scc-dual",
+              "label": "Dual posture",
+              "kids": [
+                {
+                  "id": "scd-40",
+                  "label": "combined = 0.4 design + 0.6 operating"
+                },
+                {
+                  "id": "scd-des",
+                  "label": "Design from assessment / NIST"
+                },
+                {
+                  "id": "scd-op",
+                  "label": "Operating from CCF pass_rate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-risk",
+          "label": "Risk and VAPT scores",
+          "kids": [
+            {
+              "id": "scr-crce",
+              "label": "EURMP / CRCE",
+              "kids": [
+                {
+                  "id": "srr-f",
+                  "label": "R = L × I × Π(1 − Cj)"
+                },
+                {
+                  "id": "srr-5",
+                  "label": "Continuous → 5×5 heat matrix"
+                },
+                {
+                  "id": "srr-9",
+                  "label": "Nine domain lenses"
+                }
+              ]
+            },
+            {
+              "id": "scr-vapt",
+              "label": "VAPT / AIR",
+              "kids": [
+                {
+                  "id": "srv-br",
+                  "label": "BR = min(10, CVSS×e) × weights"
+                },
+                {
+                  "id": "srv-exp",
+                  "label": "Exposure / internet / unmapped factors"
+                },
+                {
+                  "id": "srv-pos",
+                  "label": "Posture 100 − severity penalties"
+                },
+                {
+                  "id": "srv-af",
+                  "label": "Grades A≥90 … F<40"
+                },
+                {
+                  "id": "srv-bfs",
+                  "label": "Attack-path BFS scoring"
+                }
+              ]
+            },
+            {
+              "id": "scr-dyn",
+              "label": "Dynamic / financial / KRI",
+              "kids": [
+                {
+                  "id": "srd-sig",
+                  "label": "Dynamic L/I from live signals"
+                },
+                {
+                  "id": "srd-fair",
+                  "label": "FAIR-lite ALE (min+max)/2 × p"
+                },
+                {
+                  "id": "srd-kri",
+                  "label": "KRI critical/warning thresholds"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-evreg",
+          "label": "Evidence and regulatory",
+          "kids": [
+            {
+              "id": "sce-ttl",
+              "label": "Evidence TTL",
+              "kids": [
+                {
+                  "id": "set-f",
+                  "label": "Fresh ≤ 0.5 × TTL"
+                },
+                {
+                  "id": "set-a",
+                  "label": "Aging ≤ TTL; else stale"
+                },
+                {
+                  "id": "set-src",
+                  "label": "TTL by source (agent/CCM/VAPT/…)"
+                }
+              ]
+            },
+            {
+              "id": "sce-reg",
+              "label": "Regulatory relevance",
+              "kids": [
+                {
+                  "id": "ser-rel",
+                  "label": "Relevance score (juris + framework)"
+                },
+                {
+                  "id": "ser-min",
+                  "label": "Filter if < min_relevance (0.35)"
+                },
+                {
+                  "id": "ser-wb",
+                  "label": "Workbench if confidence < 0.85"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-assure",
+          "label": "Assurance capstone",
+          "kids": [
+            {
+              "id": "sca-uni",
+              "label": "Unified = 55% VAPT + 45% monitors"
+            },
+            {
+              "id": "sca-truth",
+              "label": "display = min(rawReadiness, confidence)"
+            },
+            {
+              "id": "sca-conf",
+              "label": "Confidence: ingest+CCM+evidence+assess+conn"
+            },
+            {
+              "id": "sca-zt",
+              "label": "Zero-Trust pillar ratio scores"
+            },
+            {
+              "id": "sca-xdr",
+              "label": "Trust Center XDR six-pillar proof"
+            }
+          ]
+        },
+        {
+          "id": "sc-tech",
+          "label": "Techniques and tools (catalog - kept separate)",
+          "kids": [
+            {
+              "id": "sct-bm25",
+              "label": "BM25 lexical retrieval"
+            },
+            {
+              "id": "sct-emb",
+              "label": "Embedding cosine similarity"
+            },
+            {
+              "id": "sct-ai",
+              "label": "Optional Ollama LLM (validate/justify)"
+            },
+            {
+              "id": "sct-rule",
+              "label": "Deterministic rules / thresholds"
+            },
+            {
+              "id": "sct-hmac",
+              "label": "HMAC receipts / audit trail"
+            },
+            {
+              "id": "sct-xlsx",
+              "label": "Excel Graph Data Source lookups"
+            },
+            {
+              "id": "sct-sched",
+              "label": "60s scheduler re-score ticks"
+            },
+            {
+              "id": "sct-note",
+              "label": "Also listed per stage in Holistic workflow"
+            }
+          ]
+        },
+        {
+          "id": "sc-human",
+          "label": "Human judgment (catalog - kept separate)",
+          "kids": [
+            {
+              "id": "sch-map",
+              "label": "Mapping review queue accept/reject"
+            },
+            {
+              "id": "sch-sme",
+              "label": "SME escalation (PMCR route)"
+            },
+            {
+              "id": "sch-capa",
+              "label": "Explicit Create CAPA only"
+            },
+            {
+              "id": "sch-mat",
+              "label": "Maturity & function importance picks"
+            },
+            {
+              "id": "sch-li",
+              "label": "L × I validation in risk FSM"
+            },
+            {
+              "id": "sch-wb",
+              "label": "Regulatory workbench approval"
+            },
+            {
+              "id": "sch-note",
+              "label": "Also gated per stage in Holistic workflow"
+            }
+          ]
+        },
+        {
+          "id": "sc-eval",
+          "label": "Evaluation",
+          "kids": [
+            {
+              "id": "sce-map",
+              "label": "EVAL_MAPPING_V1 (P@1 / span-verify)"
+            },
+            {
+              "id": "sce-pmcr",
+              "label": "PMCR_EVAL metrics runs"
+            },
+            {
+              "id": "sce-bb",
+              "label": "BB pioneer metrics"
+            },
+            {
+              "id": "sce-xdr",
+              "label": "Trust Center XDR eval harness"
+            },
+            {
+              "id": "sce-alg",
+              "label": "Algorithms register Alg 3.1 - 3.10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

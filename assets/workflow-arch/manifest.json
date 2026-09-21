@@ -1,0 +1,132 @@
+{
+  "collect": {
+    "title": "Collect: Master workflow architecture",
+    "lead": "Six clear steps in a continuous loop - Collect → Gate → Link → Gap → Close → Re-check - laid out so the path never crosses itself.",
+    "diagram": "assets/workflow-arch/collect.svg",
+    "components": [
+      "Human uploads",
+      "Endpoint agents",
+      "Cloud connectors / S3",
+      "Compliance monitors / CCM",
+      "VAPT scans",
+      "Policies / mapping / PMCR",
+      "CCF continuous checks"
+    ],
+    "stores": [
+      "Zero-trust file gate",
+      "Evidence artefacts fabric",
+      "Freshness / TTL / stale alerts",
+      "Continuous loop back to Collect"
+    ]
+  },
+  "process": {
+    "title": "Process: Gate and ledger architecture",
+    "lead": "Intake sources feed the Gate and ledger chain, then Zero-Trust fabric hardening before proof can attach.",
+    "diagram": "assets/workflow-arch/process.svg",
+    "components": [
+      "Zero-trust file gate",
+      "Evidence artefacts fabric",
+      "Freshness / TTL / stale alerts"
+    ],
+    "stores": [
+      "File gate / quarantine",
+      "Step-up decisions",
+      "Four-phase hardening"
+    ]
+  },
+  "trust": {
+    "title": "Trust Center: Security and Trust architecture",
+    "lead": "Trust Center over Zero-Trust fabric over IAM and tenancy, with Privacy hub alongside - live Security and Trust nodes.",
+    "diagram": "assets/workflow-arch/trust.svg",
+    "components": [
+      "IAM & tenancy",
+      "Zero-Trust fabric",
+      "Trust Center",
+      "Privacy hub"
+    ],
+    "stores": [
+      "File gate / quarantine",
+      "Step-up decisions",
+      "Four-phase hardening"
+    ]
+  },
+  "map": {
+    "title": "Map: Mapping Fabric architecture",
+    "lead": "Policy inputs through Mapping Fabric (crosswalk, STRM, review) into Link bindings for framework and control evidence.",
+    "diagram": "assets/workflow-arch/map.svg",
+    "components": [
+      "Crosswalk ledger",
+      "STRM hub-spoke",
+      "Review queue + receipts",
+      "Framework and control ID",
+      "Assessment evidence",
+      "Policy mappings / receipts",
+      "Findings + case evidence"
+    ],
+    "stores": [
+      "Crosswalk ledger",
+      "Policy mappings and receipts",
+      "Assessment evidence"
+    ]
+  },
+  "score": {
+    "title": "Score risk: Holistic scoring architecture",
+    "lead": "Holistic scoring as parallel design and operate paths that merge into capstone blend, truthful display, and continuous re-score.",
+    "diagram": "assets/workflow-arch/score.svg",
+    "components": [
+      "0. Inputs enter the scoring plane",
+      "1. Scope before score",
+      "2. Retrieve candidates (Hybrid RAG)",
+      "3. Defensible rank & route (PMCR)",
+      "4. Design-alignment report",
+      "5. Parallel design path - assessment gauges",
+      "6. Parallel OE path - CCF + monitors",
+      "7. Evidence freshness scoring",
+      "8. Risk plane scoring",
+      "9. Capstone blend & display honesty",
+      "10. Loop - re-score continuously"
+    ],
+    "stores": [
+      "Score history with provenance",
+      "Design and operate gauges",
+      "Living scores, not audit-season snapshots"
+    ]
+  },
+  "remediate": {
+    "title": "Remediate: Gap becomes work and Close",
+    "lead": "Live signals become Findings and CAPA work in My Work, then fix in environment and close.",
+    "diagram": "assets/workflow-arch/remediate.svg",
+    "components": [
+      "Findings + CAPA",
+      "Monitor remediation items",
+      "CCF remediation items",
+      "VAPT vuln remediation",
+      "My Work / user tasks"
+    ],
+    "stores": [
+      "Fix in environment",
+      "CAPA closed / item resolved"
+    ]
+  },
+  "monitor": {
+    "title": "Monitor live: Re-check architecture",
+    "lead": "Scheduler ticks fan out to live verification targets, then loop back into Collect intakes.",
+    "diagram": "assets/workflow-arch/monitor.svg",
+    "components": [
+      "Scheduler ticks",
+      "Monitors / CCM",
+      "CCF",
+      "Evidence fabric",
+      "Freshness / stale"
+    ],
+    "stores": [
+      "Human uploads",
+      "Endpoint agents",
+      "Cloud connectors / S3",
+      "Compliance monitors / CCM",
+      "VAPT scans",
+      "Policies / mapping / PMCR",
+      "CCF continuous checks"
+    ]
+  }
+}

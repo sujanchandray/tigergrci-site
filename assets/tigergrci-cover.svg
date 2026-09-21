@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="coverTitle coverDesc">
+  <title id="coverTitle">TigerGRCi</title>
+  <desc id="coverDesc">TigerGRCi product cover: governance, risk, and compliance for Bangladesh-first enterprise GRC.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf6f0"/>
+      <stop offset="55%" stop-color="#f3ebe0"/>
+      <stop offset="100%" stop-color="#e6ddd1"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1f24"/>
+      <stop offset="100%" stop-color="#12353c"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d7377"/>
+      <stop offset="50%" stop-color="#14919b"/>
+      <stop offset="100%" stop-color="#c45c26"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentLine)"/>
+  <circle cx="1080" cy="80" r="180" fill="#0d7377" fill-opacity="0.07"/>
+  <circle cx="90" cy="560" r="160" fill="#c45c26" fill-opacity="0.06"/>
+  <text x="72" y="168" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="700" letter-spacing="4" fill="#0d7377">TIGERGRCI</text>
+  <text x="72" y="250" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700" fill="#0c1f24">
+    <tspan>Tiger</tspan><tspan fill="#0d7377">GRCi</tspan>
+  </text>
+  <rect x="72" y="278" width="72" height="4" rx="2" fill="#0d7377"/>
+  <text x="72" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#1a343c">Governance. Risk. Compliance.</text>
+  <text x="72" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#4a5f66">Bangladesh-first enterprise GRC</text>
+  <text x="72" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#4a5f66">you can run with human accountability.</text>
+  <text x="72" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.2" fill="#0d7377">BANGLADESH FIRST  |  BUILT FOR THE WORLD</text>
+  <g transform="translate(620 120)">
+    <rect width="500" height="390" rx="18" fill="url(#panel)"/>
+    <rect x="0" y="0" width="500" height="6" rx="3" fill="url(#accentLine)"/>
+    <text x="36" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4" fill="#e8a87c">ENTERPRISE GRC PLATFORM</text>
+    <text x="36" y="96" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" fill="#faf6f0">One system. Three letters.</text>
+    <text x="36" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#b7c5c9">Policy, obligation, evidence, and fix loops in one workspace.</text>
+    <g transform="translate(36 168)">
+      <rect width="132" height="168" rx="12" fill="#154248"/>
+      <rect x="0" y="0" width="132" height="4" fill="#14919b"/>
+      <text x="20" y="42" font-family="Georgia, Times New Roman, serif" font-size="34" font-weight="700" fill="#14919b">G</text>
+      <text x="20" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#faf6f0">Governance</text>
+      <text x="20" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Policies</text>
+      <text x="20" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Approvals</text>
+      <text x="20" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Accountability</text>
+      <rect x="152" width="132" height="168" rx="12" fill="#154248"/>
+      <rect x="152" y="0" width="132" height="4" fill="#c45c26"/>
+      <text x="172" y="42" font-family="Georgia, Times New Roman, serif" font-size="34" font-weight="700" fill="#e8a87c">R</text>
+      <text x="172" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#faf6f0">Risk</text>
+      <text x="172" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Register</text>
+      <text x="172" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Findings</text>
+      <text x="172" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Treatments</text>
+      <rect x="304" width="132" height="168" rx="12" fill="#154248"/>
+      <rect x="304" y="0" width="132" height="4" fill="#2f6fed"/>
+      <text x="324" y="42" font-family="Georgia, Times New Roman, serif" font-size="34" font-weight="700" fill="#6b9bff">C</text>
+      <text x="324" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#faf6f0">Compliance</text>
+      <text x="324" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Controls</text>
+      <text x="324" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Evidence</text>
+      <text x="324" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9db0b5">Audit-ready</text>
+    </g>
+  </g>
+</svg>
