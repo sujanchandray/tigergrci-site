@@ -1,0 +1,65 @@
+{
+  "areas": [
+    {
+      "id": "applicability",
+      "label": "Which duties apply",
+      "hint": "Help people decide what binds their organisation before they automate."
+    },
+    {
+      "id": "legal-clarity",
+      "label": "Legal clarity and penalties",
+      "hint": "Clause-level understanding, penalties shown as written, fewer spreadsheet gaps."
+    },
+    {
+      "id": "policy-mapping",
+      "label": "Matching policies to controls",
+      "hint": "Make assistive mapping clearer, faster to review, or easier to explain to auditors."
+    },
+    {
+      "id": "frameworks",
+      "label": "BD law plus international frameworks",
+      "hint": "Harmonising Bangladesh cyber law, bank packs, and global catalogues in one place."
+    },
+    {
+      "id": "evidence-capa",
+      "label": "Evidence and fixes",
+      "hint": "Evidence lifecycle, fix-and-prove closure, audit readiness, human accountability."
+    },
+    {
+      "id": "risk-vapt",
+      "label": "Risk and scan findings",
+      "hint": "Company risk and vulnerability findings feeding the same fix path."
+    },
+    {
+      "id": "trust-sovereign",
+      "label": "Trust and self-hosted deployment",
+      "hint": "Self-host, separate workspaces, roles, and data staying where operators need it."
+    },
+    {
+      "id": "ease-of-use",
+      "label": "Ease of use for teams",
+      "hint": "Journeys, dashboards, and day-to-day workflow for compliance and security teams."
+    },
+    {
+      "id": "other",
+      "label": "Something else",
+      "hint": "Tell us the outcome you care about most."
+    }
+  ],
+  "complimentChips": [
+    "Clears up what the law actually requires",
+    "Useful Bangladesh-first focus",
+    "Human review keeps suggestions honest",
+    "Connects policy, controls, and evidence",
+    "Strong fix-and-prove loop",
+    "Self-hostable trust model"
+  ],
+  "roles": [
+    "Student / researcher",
+    "Compliance practitioner",
+    "Auditor / assurance",
+    "CISO / security lead",
+    "Founder / builder",
+    "Other"
+  ]
+}
