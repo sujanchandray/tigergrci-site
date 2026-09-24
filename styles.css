@@ -207,6 +207,57 @@ a:hover { color: var(--accent); }
   font-weight: 550;
 }
 
+.hero--flat .hero-copy h1.hero-brand {
+  max-width: none;
+  margin-bottom: 0.35rem;
+}
+
+.hero-brand span { color: var(--teal); }
+
+.hero-tagline {
+  margin: 0 0 1rem;
+  max-width: 34ch;
+  font-size: clamp(1.1rem, 2vw, 1.32rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  animation: rise 0.7s ease 0.04s both;
+}
+
+.hero-academic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin: 0 0 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--flat-yellow-deep);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--muted);
+  animation: rise 0.7s ease 0.06s both;
+}
+
+.hero-academic span:first-child {
+  font-style: italic;
+}
+
+.academic-section {
+  padding: 2.25rem 0;
+}
+
+.academic-section .academic-text {
+  max-width: 44rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+@media (max-width: 480px) {
+  .hero-tagline { font-size: 1.05rem; }
+  .hero-academic { font-size: 0.8rem; }
+}
+
 .btn-flat {
   border-radius: var(--radius-flat);
   box-shadow: 3px 3px 0 var(--ink);
