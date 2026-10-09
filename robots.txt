@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Explicit allow for major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://sujanchandray.github.io/tigergrci-site/sitemap.xml
