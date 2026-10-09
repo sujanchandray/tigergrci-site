@@ -9,3 +9,4 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://sujanchandray.github.io/tigergrci-site/sitemap.xml
+Sitemap: https://sujanchandray.github.io/tigergrci-site/sitemap.txt
