@@ -8,5 +8,5 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://tigergrci.sujanray.workers.dev/sitemap.xml
-Sitemap: https://tigergrci.sujanray.workers.dev/sitemap.txt
+Sitemap: https://sujanchandray.github.io/tigergrci-site/sitemap.xml
+Sitemap: https://sujanchandray.github.io/tigergrci-site/sitemap.txt

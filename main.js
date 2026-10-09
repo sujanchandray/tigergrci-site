@@ -703,7 +703,7 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   /* Social: LinkedIn profile, Facebook share */
-  const SITE_PUBLIC_URL = "https://tigergrci.sujanray.workers.dev/";
+  const SITE_PUBLIC_URL = "https://sujanchandray.github.io/tigergrci-site/";
   const SOCIAL = {
     linkedinProfile: "https://www.linkedin.com/in/sujan-c-ray",
     facebookProfile: "",
