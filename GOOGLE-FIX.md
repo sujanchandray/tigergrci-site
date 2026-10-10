@@ -1,25 +1,53 @@
-# Fix Google visibility (Cloudflare primary)
+# How to actually fix Google (not more github.io sitemap retries)
 
-GitHub Pages `Couldn't fetch` for sitemaps is a known Google limitation on `*.github.io`.  
-**Primary public SEO URL is now:**
+## Hard fact
 
-https://tigergrci.sujanray.workers.dev/
+Google Search Console **Couldn't fetch** on  
+`https://sujanchandray.github.io/tigergrci-site/sitemap.xml`  
+is a **known Google + GitHub Pages limitation**.  
+The file is valid. Browsers open it. Googlebot can download it.  
+**Editing `sitemap.xml` again will not clear the red status.**
 
-## Do this in Google Search Console (required — 10 minutes)
+Your homepage is already **URL is on Google** in Search Console.  
+The remaining gap is sitemap Success + stronger discovery — that needs a host Google will process.
 
-1. Open https://search.google.com/search-console
-2. **Add property** → **URL prefix** → paste exactly:  
-   `https://tigergrci.sujanray.workers.dev/`
-3. Verify (HTML file method): the file  
-   `https://tigergrci.sujanray.workers.dev/googlea36dc6fd400d4707.html`  
-   is already on the site after deploy. Or use the meta-tag Google shows.
-4. **Sitemaps** → submit: `sitemap.xml`
-5. **URL Inspection** → `https://tigergrci.sujanray.workers.dev/` → **Request indexing**
-6. Also request indexing for `/work-with-me.html` and `/privacy.html`
-7. Update LinkedIn / GitHub **Website** field to the Cloudflare URL above
+## Real fix (Cloudflare host)
 
-Ignore the old `github.io` sitemap **Couldn't fetch** row. That host cannot be forced to Success. Use the Cloudflare property instead.
+Primary SEO URL to use:
 
-## Share this URL publicly
+`https://tigergrci.sujanray.workers.dev/`
 
-https://tigergrci.sujanray.workers.dev/
+### Step A — Authenticate Cloudflare (you must do this once)
+
+In PowerShell:
+
+```powershell
+cd C:\TigerGRCi\website
+npx wrangler login
+```
+
+Complete the browser login. Then tell the agent (or run):
+
+```powershell
+cd C:\TigerGRCi
+node website/scripts/deploy-cloudflare-pages.js
+```
+
+(Or set `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` and redeploy.)
+
+### Step B — New Search Console property
+
+1. Add URL-prefix property: `https://tigergrci.sujanray.workers.dev/`
+2. Verify ownership
+3. Submit sitemap: `sitemap.xml`
+4. Request indexing for `/`, `/work-with-me.html`, `/privacy.html`
+5. Put that URL on LinkedIn + GitHub Website
+
+### Step C — Stop fighting the old property
+
+Leave the `github.io` sitemap row alone. Do not delete/resubmit it every few minutes.
+
+## After Cloudflare deploy succeeds
+
+We will switch canonicals / sitemap `loc` URLs to `workers.dev` and republish.  
+Until then, github.io keeps its own URLs so the current GSC property stays valid.

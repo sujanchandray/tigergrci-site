@@ -1,0 +1,2214 @@
+{
+  "builtAt": "2026-10-10T10:45:28.147Z",
+  "stages": {
+    "collect": {
+      "stageId": "collect",
+      "nodes": [
+        {
+          "id": "human-uploads-0",
+          "label": "Human uploads",
+          "display": "Human uploads",
+          "phase": "Collect",
+          "chip": "Upload files",
+          "action": "Intake artefact into tenant workspace",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 104,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "cloud-connectors-s3-1",
+          "label": "Cloud connectors / S3",
+          "display": "Cloud connectors",
+          "phase": "Collect",
+          "chip": "From cloud",
+          "action": "Pull cloud evidence into the gate",
+          "icon": "assets/workflow-arch/iso/iso-cloud.png",
+          "layout": {
+            "x": 244,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "endpoint-agents-2",
+          "label": "Endpoint agents",
+          "display": "Endpoint agents",
+          "phase": "Collect",
+          "chip": "From devices",
+          "action": "Register endpoint agent signals",
+          "icon": "assets/workflow-arch/iso/iso-endpoint.png",
+          "layout": {
+            "x": 384,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "compliance-monitors-ccm-3",
+          "label": "Compliance monitors / CCM",
+          "display": "Compliance monitors / CCM",
+          "phase": "Collect",
+          "chip": "Live checks",
+          "action": "Stream continuous control checks",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 524,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "vapt-scans-4",
+          "label": "VAPT scans",
+          "display": "VAPT scans",
+          "phase": "Collect",
+          "chip": "Scan findings",
+          "action": "Ingest VAPT findings for scoring",
+          "icon": "assets/workflow-arch/iso/iso-vapt-scan.png",
+          "layout": {
+            "x": 664,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "ccf-continuous-checks-5",
+          "label": "CCF continuous checks",
+          "display": "CCF continuous",
+          "phase": "Collect",
+          "chip": "Auto checks",
+          "action": "Queue continuous compliance checks",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 804,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "policies-mapping-pmcr-6",
+          "label": "Policies / mapping / PMCR",
+          "display": "Policies / PMCR",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 944,
+            "y": 200,
+            "panel": 0
+          }
+        },
+        {
+          "id": "zero-trust-file-gate-7",
+          "label": "Zero-trust file gate",
+          "display": "Zero-trust file gate",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 1100,
+            "y": 200,
+            "panel": 1
+          }
+        },
+        {
+          "id": "evidence-artefacts-fabric-8",
+          "label": "Evidence artefacts fabric",
+          "display": "Evidence artefacts",
+          "phase": "Gate",
+          "chip": "Store proof",
+          "action": "Store evidence artefacts with lineage",
+          "icon": "assets/workflow-arch/iso/iso-evidence-fabric.png",
+          "layout": {
+            "x": 1240,
+            "y": 200,
+            "panel": 1
+          }
+        },
+        {
+          "id": "freshness-ttl-stale-alerts-9",
+          "label": "Freshness / TTL / stale alerts",
+          "display": "Freshness / TTL",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 1380,
+            "y": 200,
+            "panel": 1
+          }
+        },
+        {
+          "id": "framework-and-control-id-10",
+          "label": "Framework and control ID",
+          "display": "Framework controls",
+          "phase": "Link",
+          "chip": "Link control",
+          "action": "Bind artefact to framework control",
+          "icon": "assets/workflow-arch/iso/iso-control-link.png",
+          "layout": {
+            "x": 1536,
+            "y": 200,
+            "panel": 2
+          }
+        },
+        {
+          "id": "assessment-evidence-11",
+          "label": "Assessment evidence",
+          "display": "Assessment evidence",
+          "phase": "Link",
+          "chip": "Assessment",
+          "action": "Attach assessment evidence to control",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1722.6666666666667,
+            "y": 200,
+            "panel": 2
+          }
+        },
+        {
+          "id": "policy-mappings-receipts-12",
+          "label": "Policy mappings / receipts",
+          "display": "Policy mappings / receipts",
+          "phase": "Link",
+          "chip": "Map policy",
+          "action": "Record signed mapping receipt",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 1909.3333333333333,
+            "y": 200,
+            "panel": 2
+          }
+        },
+        {
+          "id": "findings-case-evidence-13",
+          "label": "Findings + case evidence",
+          "display": "Findings + case evidence",
+          "phase": "Link",
+          "chip": "Link finding",
+          "action": "Link findings into case evidence",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 2096,
+            "y": 200,
+            "panel": 2
+          }
+        },
+        {
+          "id": "monitor-remediation-items-14",
+          "label": "Monitor remediation items",
+          "display": "Monitor remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 2096,
+            "y": 440,
+            "panel": 3
+          }
+        },
+        {
+          "id": "vapt-vuln-remediation-15",
+          "label": "VAPT vuln remediation",
+          "display": "VAPT vuln remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-vapt-scan.png",
+          "layout": {
+            "x": 1956,
+            "y": 440,
+            "panel": 3
+          }
+        },
+        {
+          "id": "ccf-remediation-items-16",
+          "label": "CCF remediation items",
+          "display": "CCF remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 1816,
+            "y": 440,
+            "panel": 3
+          }
+        },
+        {
+          "id": "findings-capa-17",
+          "label": "Findings + CAPA",
+          "display": "Findings + CAPA",
+          "phase": "Gap",
+          "chip": "Start CAPA",
+          "action": "Open finding with CAPA lifecycle",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 1676,
+            "y": 440,
+            "panel": 3
+          }
+        },
+        {
+          "id": "my-work-user-tasks-18",
+          "label": "My Work / user tasks",
+          "display": "My Work / user tasks",
+          "phase": "Gap",
+          "chip": "Assign owner",
+          "action": "Queue owned work with due dates",
+          "icon": "assets/workflow-arch/iso/iso-my-work.png",
+          "layout": {
+            "x": 1536,
+            "y": 440,
+            "panel": 3
+          }
+        },
+        {
+          "id": "fix-in-environment-19",
+          "label": "Fix in environment",
+          "display": "Fix in environment",
+          "phase": "Close",
+          "chip": "Fix it",
+          "action": "Remediate in environment with proof",
+          "icon": "assets/workflow-arch/iso/iso-close-capa.png",
+          "layout": {
+            "x": 1380,
+            "y": 440,
+            "panel": 4
+          }
+        },
+        {
+          "id": "capa-closed-item-resolved-20",
+          "label": "CAPA closed / item resolved",
+          "display": "CAPA closed",
+          "phase": "Close",
+          "chip": "Close it",
+          "action": "Close only when evidence revalidates",
+          "icon": "assets/workflow-arch/iso/iso-close-capa.png",
+          "layout": {
+            "x": 1100,
+            "y": 440,
+            "panel": 4
+          }
+        },
+        {
+          "id": "scheduler-ticks-21",
+          "label": "Scheduler ticks",
+          "display": "Scheduler ticks",
+          "phase": "Re-check",
+          "chip": "Timer tick",
+          "action": "Scheduler re-ticks monitors and CCF",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 944,
+            "y": 440,
+            "panel": 5
+          }
+        },
+        {
+          "id": "monitors-ccm-22",
+          "label": "Monitors / CCM",
+          "display": "Monitors / CCM",
+          "phase": "Collect",
+          "chip": "Live checks",
+          "action": "Stream continuous control checks",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 734,
+            "y": 440,
+            "panel": 5
+          }
+        },
+        {
+          "id": "ccf-23",
+          "label": "CCF",
+          "display": "CCF",
+          "phase": "Re-check",
+          "chip": "Check again",
+          "action": "Re-check operating posture live",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 524,
+            "y": 440,
+            "panel": 5
+          }
+        },
+        {
+          "id": "evidence-fabric-24",
+          "label": "Evidence fabric",
+          "display": "Evidence fabric",
+          "phase": "Gate",
+          "chip": "Store proof",
+          "action": "Store evidence artefacts with lineage",
+          "icon": "assets/workflow-arch/iso/iso-evidence-fabric.png",
+          "layout": {
+            "x": 314,
+            "y": 440,
+            "panel": 5
+          }
+        },
+        {
+          "id": "freshness-stale-25",
+          "label": "Freshness / stale",
+          "display": "Freshness / stale",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 104,
+            "y": 440,
+            "panel": 5
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "human-uploads-0",
+          "to": "cloud-connectors-s3-1"
+        },
+        {
+          "from": "cloud-connectors-s3-1",
+          "to": "endpoint-agents-2"
+        },
+        {
+          "from": "endpoint-agents-2",
+          "to": "compliance-monitors-ccm-3"
+        },
+        {
+          "from": "compliance-monitors-ccm-3",
+          "to": "vapt-scans-4"
+        },
+        {
+          "from": "vapt-scans-4",
+          "to": "ccf-continuous-checks-5"
+        },
+        {
+          "from": "ccf-continuous-checks-5",
+          "to": "policies-mapping-pmcr-6"
+        },
+        {
+          "from": "policies-mapping-pmcr-6",
+          "to": "zero-trust-file-gate-7"
+        },
+        {
+          "from": "zero-trust-file-gate-7",
+          "to": "evidence-artefacts-fabric-8"
+        },
+        {
+          "from": "evidence-artefacts-fabric-8",
+          "to": "freshness-ttl-stale-alerts-9"
+        },
+        {
+          "from": "freshness-ttl-stale-alerts-9",
+          "to": "framework-and-control-id-10"
+        },
+        {
+          "from": "framework-and-control-id-10",
+          "to": "assessment-evidence-11"
+        },
+        {
+          "from": "assessment-evidence-11",
+          "to": "policy-mappings-receipts-12"
+        },
+        {
+          "from": "policy-mappings-receipts-12",
+          "to": "findings-case-evidence-13"
+        },
+        {
+          "from": "findings-case-evidence-13",
+          "to": "monitor-remediation-items-14"
+        },
+        {
+          "from": "monitor-remediation-items-14",
+          "to": "vapt-vuln-remediation-15"
+        },
+        {
+          "from": "vapt-vuln-remediation-15",
+          "to": "ccf-remediation-items-16"
+        },
+        {
+          "from": "ccf-remediation-items-16",
+          "to": "findings-capa-17"
+        },
+        {
+          "from": "findings-capa-17",
+          "to": "my-work-user-tasks-18"
+        },
+        {
+          "from": "my-work-user-tasks-18",
+          "to": "fix-in-environment-19"
+        },
+        {
+          "from": "fix-in-environment-19",
+          "to": "capa-closed-item-resolved-20"
+        },
+        {
+          "from": "capa-closed-item-resolved-20",
+          "to": "scheduler-ticks-21"
+        },
+        {
+          "from": "scheduler-ticks-21",
+          "to": "monitors-ccm-22"
+        },
+        {
+          "from": "monitors-ccm-22",
+          "to": "ccf-23"
+        },
+        {
+          "from": "ccf-23",
+          "to": "evidence-fabric-24"
+        },
+        {
+          "from": "evidence-fabric-24",
+          "to": "freshness-stale-25"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Collect",
+          "step": "1",
+          "blurb": "Artefacts enter from every live source",
+          "itemCount": 7
+        },
+        {
+          "title": "Gate",
+          "step": "2",
+          "blurb": "Zero-trust classify before proof attaches",
+          "itemCount": 3
+        },
+        {
+          "title": "Link",
+          "step": "3",
+          "blurb": "Bind evidence to framework controls",
+          "itemCount": 4
+        },
+        {
+          "title": "Gap",
+          "step": "4",
+          "blurb": "Fails become owned CAPA work",
+          "itemCount": 5
+        },
+        {
+          "title": "Close",
+          "step": "5",
+          "blurb": "Fix in environment - close with proof",
+          "itemCount": 2
+        },
+        {
+          "title": "Re-check",
+          "step": "6",
+          "blurb": "Scheduler re-verifies and loops to Collect",
+          "itemCount": 5
+        }
+      ],
+      "title": "Collect: Master workflow architecture",
+      "lead": "Six clear steps in a continuous loop - Collect -> Gate -> Link -> Gap -> Close -> Re-check - laid out so the path never crosses itself."
+    },
+    "process": {
+      "stageId": "process",
+      "nodes": [
+        {
+          "id": "human-uploads-0",
+          "label": "Human uploads",
+          "display": "Human uploads",
+          "phase": "Collect",
+          "chip": "Upload files",
+          "action": "Intake artefact into tenant workspace",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 78,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "endpoint-agents-1",
+          "label": "Endpoint agents",
+          "display": "Endpoint agents",
+          "phase": "Collect",
+          "chip": "From devices",
+          "action": "Register endpoint agent signals",
+          "icon": "assets/workflow-arch/iso/iso-endpoint.png",
+          "layout": {
+            "x": 210,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "cloud-connectors-s3-2",
+          "label": "Cloud connectors / S3",
+          "display": "Cloud connectors",
+          "phase": "Collect",
+          "chip": "From cloud",
+          "action": "Pull cloud evidence into the gate",
+          "icon": "assets/workflow-arch/iso/iso-cloud.png",
+          "layout": {
+            "x": 342,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "policies-mapping-pmcr-3",
+          "label": "Policies / mapping / PMCR",
+          "display": "Policies / PMCR",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 474,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "zero-trust-file-gate-4",
+          "label": "Zero-trust file gate",
+          "display": "Zero-trust file gate",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 614,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "evidence-artefacts-fabric-5",
+          "label": "Evidence artefacts fabric",
+          "display": "Evidence artefacts",
+          "phase": "Gate",
+          "chip": "Store proof",
+          "action": "Store evidence artefacts with lineage",
+          "icon": "assets/workflow-arch/iso/iso-evidence-fabric.png",
+          "layout": {
+            "x": 746,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "freshness-ttl-stale-alerts-6",
+          "label": "Freshness / TTL / stale alerts",
+          "display": "Freshness / TTL",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 878,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "file-gate-quarantine-7",
+          "label": "File gate / quarantine",
+          "display": "File gate",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 1018,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "step-up-decisions-8",
+          "label": "Step-up decisions",
+          "display": "Step-up decision",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 1150,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "four-phase-hardening-9",
+          "label": "Four-phase hardening",
+          "display": "Four-phase hardening",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 1282,
+            "y": 186,
+            "panel": 2
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "human-uploads-0",
+          "to": "endpoint-agents-1"
+        },
+        {
+          "from": "endpoint-agents-1",
+          "to": "cloud-connectors-s3-2"
+        },
+        {
+          "from": "cloud-connectors-s3-2",
+          "to": "policies-mapping-pmcr-3"
+        },
+        {
+          "from": "policies-mapping-pmcr-3",
+          "to": "zero-trust-file-gate-4"
+        },
+        {
+          "from": "zero-trust-file-gate-4",
+          "to": "evidence-artefacts-fabric-5"
+        },
+        {
+          "from": "evidence-artefacts-fabric-5",
+          "to": "freshness-ttl-stale-alerts-6"
+        },
+        {
+          "from": "freshness-ttl-stale-alerts-6",
+          "to": "file-gate-quarantine-7"
+        },
+        {
+          "from": "file-gate-quarantine-7",
+          "to": "step-up-decisions-8"
+        },
+        {
+          "from": "step-up-decisions-8",
+          "to": "four-phase-hardening-9"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Collect",
+          "step": "1",
+          "blurb": "Intake sources into the gate",
+          "itemCount": 4
+        },
+        {
+          "title": "Gate",
+          "step": "2",
+          "blurb": "Gate and ledger chain",
+          "itemCount": 3
+        },
+        {
+          "title": "Zero-Trust",
+          "step": "ZT",
+          "blurb": "Zero-Trust fabric hardening",
+          "itemCount": 3
+        }
+      ],
+      "title": "Process: Gate and ledger architecture",
+      "lead": "Intake sources feed the Gate and ledger chain, then Zero-Trust fabric hardening before proof can attach."
+    },
+    "trust": {
+      "stageId": "trust",
+      "nodes": [
+        {
+          "id": "customer-transparency-0",
+          "label": "Customer transparency",
+          "display": "Customer transparency",
+          "phase": "Trust",
+          "chip": "Public trust",
+          "action": "Publish trust posture for stakeholders",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 76,
+            "y": 184,
+            "panel": 0
+          }
+        },
+        {
+          "id": "xdr-sensor-seg-cspm-1",
+          "label": "XDR / sensor / SEG / CSPM",
+          "display": "XDR / sensor",
+          "phase": "Trust",
+          "chip": "Public trust",
+          "action": "Publish trust posture for stakeholders",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 204,
+            "y": 184,
+            "panel": 0
+          }
+        },
+        {
+          "id": "file-gate-quarantine-2",
+          "label": "File gate / quarantine",
+          "display": "File gate",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 336,
+            "y": 184,
+            "panel": 1
+          }
+        },
+        {
+          "id": "step-up-decisions-3",
+          "label": "Step-up decisions",
+          "display": "Step-up decision",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 464,
+            "y": 184,
+            "panel": 1
+          }
+        },
+        {
+          "id": "four-phase-hardening-4",
+          "label": "Four-phase hardening",
+          "display": "Four-phase hardening",
+          "phase": "Gate",
+          "chip": "Security gate",
+          "action": "Quarantine and classify before proof attaches",
+          "icon": "assets/workflow-arch/iso/iso-zero-trust-gate.png",
+          "layout": {
+            "x": 592,
+            "y": 184,
+            "panel": 1
+          }
+        },
+        {
+          "id": "jwt-tenant-floor-5",
+          "label": "JWT tenant floor",
+          "display": "JWT tenant floor",
+          "phase": "Trust",
+          "chip": "Who can access",
+          "action": "Enforce IAM, RLS, and role boundaries",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 724,
+            "y": 184,
+            "panel": 2
+          }
+        },
+        {
+          "id": "postgresql-rls-6",
+          "label": "PostgreSQL RLS",
+          "display": "PostgreSQL RLS",
+          "phase": "Trust",
+          "chip": "Who can access",
+          "action": "Enforce IAM, RLS, and role boundaries",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 852,
+            "y": 184,
+            "panel": 2
+          }
+        },
+        {
+          "id": "8-rbac-roles-7",
+          "label": "8 RBAC roles",
+          "display": "8 RBAC roles",
+          "phase": "Trust",
+          "chip": "Who can access",
+          "action": "Enforce IAM, RLS, and role boundaries",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 980,
+            "y": 184,
+            "panel": 2
+          }
+        },
+        {
+          "id": "oidc-sso-8",
+          "label": "OIDC SSO",
+          "display": "OIDC SSO",
+          "phase": "Trust",
+          "chip": "Who can access",
+          "action": "Enforce IAM, RLS, and role boundaries",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 1108,
+            "y": 184,
+            "panel": 2
+          }
+        },
+        {
+          "id": "ropa-dpia-dsr-9",
+          "label": "RoPA / DPIA / DSR",
+          "display": "RoPA / DPIA / DSR",
+          "phase": "Trust",
+          "chip": "Privacy",
+          "action": "Run privacy and ethics workflows",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 1240,
+            "y": 184,
+            "panel": 3
+          }
+        },
+        {
+          "id": "local-ai-option-10",
+          "label": "Local AI option",
+          "display": "Local AI option",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 1368,
+            "y": 184,
+            "panel": 3
+          }
+        },
+        {
+          "id": "ethics-coi-gifts-11",
+          "label": "Ethics / COI / gifts",
+          "display": "Ethics / COI / gifts",
+          "phase": "Trust",
+          "chip": "Privacy",
+          "action": "Run privacy and ethics workflows",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 1496,
+            "y": 184,
+            "panel": 3
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "customer-transparency-0",
+          "to": "xdr-sensor-seg-cspm-1"
+        },
+        {
+          "from": "xdr-sensor-seg-cspm-1",
+          "to": "file-gate-quarantine-2"
+        },
+        {
+          "from": "file-gate-quarantine-2",
+          "to": "step-up-decisions-3"
+        },
+        {
+          "from": "step-up-decisions-3",
+          "to": "four-phase-hardening-4"
+        },
+        {
+          "from": "four-phase-hardening-4",
+          "to": "jwt-tenant-floor-5"
+        },
+        {
+          "from": "jwt-tenant-floor-5",
+          "to": "postgresql-rls-6"
+        },
+        {
+          "from": "postgresql-rls-6",
+          "to": "8-rbac-roles-7"
+        },
+        {
+          "from": "8-rbac-roles-7",
+          "to": "oidc-sso-8"
+        },
+        {
+          "from": "oidc-sso-8",
+          "to": "ropa-dpia-dsr-9"
+        },
+        {
+          "from": "ropa-dpia-dsr-9",
+          "to": "local-ai-option-10"
+        },
+        {
+          "from": "local-ai-option-10",
+          "to": "ethics-coi-gifts-11"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Trust",
+          "step": "1",
+          "blurb": "Trust Center transparency",
+          "itemCount": 2
+        },
+        {
+          "title": "Zero-Trust",
+          "step": "2",
+          "blurb": "Zero-Trust fabric",
+          "itemCount": 3
+        },
+        {
+          "title": "Trust",
+          "step": "3",
+          "blurb": "IAM and tenancy floor",
+          "itemCount": 4
+        },
+        {
+          "title": "Trust",
+          "step": "4",
+          "blurb": "Privacy hub",
+          "itemCount": 3
+        }
+      ],
+      "title": "Trust Center: Security and Trust architecture",
+      "lead": "Trust Center over Zero-Trust fabric over IAM and tenancy, with Privacy hub alongside - live Security and Trust nodes."
+    },
+    "map": {
+      "stageId": "map",
+      "nodes": [
+        {
+          "id": "policies-mapping-pmcr-0",
+          "label": "Policies / mapping / PMCR",
+          "display": "Policies / PMCR",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 78,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "crosswalk-ledger-1",
+          "label": "Crosswalk ledger",
+          "display": "Crosswalk ledger",
+          "phase": "Map",
+          "chip": "Human review",
+          "action": "Assistive map - human accepts or rejects",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 318,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "strm-hub-spoke-2",
+          "label": "STRM hub-spoke",
+          "display": "STRM hub-spoke",
+          "phase": "Map",
+          "chip": "Human review",
+          "action": "Assistive map - human accepts or rejects",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 450,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "review-queue-receipts-3",
+          "label": "Review queue + receipts",
+          "display": "Review queue + receipts",
+          "phase": "Link",
+          "chip": "Map policy",
+          "action": "Record signed mapping receipt",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 582,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "framework-and-control-id-4",
+          "label": "Framework and control ID",
+          "display": "Framework controls",
+          "phase": "Link",
+          "chip": "Link control",
+          "action": "Bind artefact to framework control",
+          "icon": "assets/workflow-arch/iso/iso-control-link.png",
+          "layout": {
+            "x": 722,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "assessment-evidence-5",
+          "label": "Assessment evidence",
+          "display": "Assessment evidence",
+          "phase": "Link",
+          "chip": "Assessment",
+          "action": "Attach assessment evidence to control",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 854,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "policy-mappings-receipts-6",
+          "label": "Policy mappings / receipts",
+          "display": "Policy mappings / receipts",
+          "phase": "Link",
+          "chip": "Map policy",
+          "action": "Record signed mapping receipt",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 986,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "findings-case-evidence-7",
+          "label": "Findings + case evidence",
+          "display": "Findings + case evidence",
+          "phase": "Link",
+          "chip": "Link finding",
+          "action": "Link findings into case evidence",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 1118,
+            "y": 186,
+            "panel": 2
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "policies-mapping-pmcr-0",
+          "to": "crosswalk-ledger-1"
+        },
+        {
+          "from": "crosswalk-ledger-1",
+          "to": "strm-hub-spoke-2"
+        },
+        {
+          "from": "strm-hub-spoke-2",
+          "to": "review-queue-receipts-3"
+        },
+        {
+          "from": "review-queue-receipts-3",
+          "to": "framework-and-control-id-4"
+        },
+        {
+          "from": "framework-and-control-id-4",
+          "to": "assessment-evidence-5"
+        },
+        {
+          "from": "assessment-evidence-5",
+          "to": "policy-mappings-receipts-6"
+        },
+        {
+          "from": "policy-mappings-receipts-6",
+          "to": "findings-case-evidence-7"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Collect",
+          "step": "1",
+          "blurb": "Policy inputs",
+          "itemCount": 1
+        },
+        {
+          "title": "Map",
+          "step": "2",
+          "blurb": "Mapping Fabric",
+          "itemCount": 3
+        },
+        {
+          "title": "Link",
+          "step": "3",
+          "blurb": "Framework and evidence bindings",
+          "itemCount": 4
+        }
+      ],
+      "title": "Map: Mapping Fabric architecture",
+      "lead": "Policy inputs through Mapping Fabric (crosswalk, STRM, review) into Link bindings for framework and control evidence."
+    },
+    "score": {
+      "stageId": "score",
+      "nodes": [
+        {
+          "id": "inputs-enter-the-scoring-plane-0",
+          "label": "Inputs enter the scoring plane",
+          "display": "Inputs enter",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 73,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "human-assessment-maturity-answers-1",
+          "label": "Human assessment maturity answers",
+          "display": "Human assessment",
+          "phase": "Collect",
+          "chip": "Upload files",
+          "action": "Intake artefact into tenant workspace",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 195,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "policy-text-pdf-zt-gated-2",
+          "label": "Policy text / PDF (ZT-gated)",
+          "display": "Policy text / PDF (ZT-gated)",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 317,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "scope-before-score-3",
+          "label": "Scope before score",
+          "display": "Scope before score",
+          "phase": "Score",
+          "chip": "Set scope",
+          "action": "Scope controls before any score",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 439,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "output-scoped-control-set-for-scoring-4",
+          "label": "Output: scoped control set for scoring",
+          "display": "Scoped controls",
+          "phase": "Score",
+          "chip": "Set scope",
+          "action": "Scope controls before any score",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 561,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "technique-verified-org-fact-predicates-5",
+          "label": "Technique: verified org-fact predicates",
+          "display": "verified org-fact predicates",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 683,
+            "y": 181,
+            "panel": 0
+          }
+        },
+        {
+          "id": "retrieve-candidates-hybrid-rag-6",
+          "label": "Retrieve candidates (Hybrid RAG)",
+          "display": "Retrieve candidates",
+          "phase": "Score",
+          "chip": "Find controls",
+          "action": "Rank controls with embed + BM25",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 809,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "output-ranked-hits-met-partial-gap-labels-7",
+          "label": "Output: ranked hits → Met / Partial / Gap labels",
+          "display": "Ranked Met / Gap",
+          "phase": "Score",
+          "chip": "Find controls",
+          "action": "Rank controls with embed + BM25",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 931,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "techniques-bm25-cosine-embed-keyword-atom-gates-8",
+          "label": "Techniques: BM25, cosine embed, keyword/atom gates",
+          "display": "BM25 + embeddings",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1053,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "defensible-rank-route-pmcr-9",
+          "label": "Defensible rank & route (PMCR)",
+          "display": "Defensible rank",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 1175,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "output-route-signed-receipt-mapping-fabric-10",
+          "label": "Output: route + signed receipt → Mapping Fabric",
+          "display": "Route + receipt",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1297,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "techniques-weighted-sum-span-verify-conflict-pen-11",
+          "label": "Techniques: weighted sum, span-verify, conflict penalties",
+          "display": "Weighted + span-verify",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1419,
+            "y": 181,
+            "panel": 1
+          }
+        },
+        {
+          "id": "design-alignment-report-12",
+          "label": "Design-alignment report",
+          "display": "Design-alignment",
+          "phase": "Score",
+          "chip": "Design score",
+          "action": "Score design posture (≠ OE)",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1545,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "output-report-ready-oe-capa-13",
+          "label": "Output: Report Ready (≠ OE ≠ CAPA)",
+          "display": "Report Ready (≠ OE ≠ CAPA)",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1667,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "technique-coverage-first-rubric-design-only-14",
+          "label": "Technique: coverage-first rubric (design only)",
+          "display": "coverage-first rubric",
+          "phase": "Score",
+          "chip": "Design score",
+          "action": "Score design posture (≠ OE)",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1789,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "parallel-design-path-assessment-gauges-15",
+          "label": "Parallel design path - assessment gauges",
+          "display": "Parallel design",
+          "phase": "Score",
+          "chip": "Design score",
+          "action": "Score design posture (≠ OE)",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1911,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "output-design-posture-for-dual-blend-16",
+          "label": "Output: design posture for dual blend",
+          "display": "Design posture",
+          "phase": "Score",
+          "chip": "Design score",
+          "action": "Score design posture (≠ OE)",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 2033,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "techniques-vlookup-maturity-xlookup-importance-b-17",
+          "label": "Techniques: VLOOKUP maturity, XLOOKUP importance bands",
+          "display": "VLOOKUP maturity",
+          "phase": "Score",
+          "chip": "Design score",
+          "action": "Score design posture (≠ OE)",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 2155,
+            "y": 181,
+            "panel": 2
+          }
+        },
+        {
+          "id": "parallel-oe-path-ccf-monitors-18",
+          "label": "Parallel OE path - CCF + monitors",
+          "display": "Parallel OE path",
+          "phase": "Score",
+          "chip": "Live score",
+          "action": "Score operating effectiveness live",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 73,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "output-operating-posture-fail-at-risk-items-19",
+          "label": "Output: operating posture + fail/at risk items",
+          "display": "OE posture / risk",
+          "phase": "Score",
+          "chip": "Live score",
+          "action": "Score operating effectiveness live",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 195,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "techniques-rule-thresholds-section-rollups-20",
+          "label": "Techniques: rule thresholds, section rollups",
+          "display": "Rule thresholds",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 317,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "evidence-freshness-scoring-21",
+          "label": "Evidence freshness scoring",
+          "display": "Evidence freshness",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 439,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "output-freshness-bands-pmcr-e-sub-score-22",
+          "label": "Output: freshness bands + PMCR E sub-score",
+          "display": "Freshness bands",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 561,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "technique-per-source-ttl-defaults-23",
+          "label": "Technique: per-source TTL defaults",
+          "display": "Per-source TTL",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 683,
+            "y": 395,
+            "panel": 3
+          }
+        },
+        {
+          "id": "risk-plane-scoring-24",
+          "label": "Risk plane scoring",
+          "display": "Risk plane",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 809,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "output-residual-risk-vuln-priorities-25",
+          "label": "Output: residual risk + vuln priorities",
+          "display": "Residual risk",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 931,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "techniques-5-5-matrix-bfs-attack-paths-kris-26",
+          "label": "Techniques: 5×5 matrix, BFS attack paths, KRIs",
+          "display": "5×5 matrix",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1053,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "capstone-blend-display-honesty-27",
+          "label": "Capstone blend & display honesty",
+          "display": "Capstone blend",
+          "phase": "Score",
+          "chip": "Final score",
+          "action": "Blend design + OE with confidence floor",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1175,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "output-dashboard-board-pack-headline-scores-28",
+          "label": "Output: dashboard / board pack headline scores",
+          "display": "Living dashboard",
+          "phase": "Flow",
+          "chip": "Next step",
+          "action": "Advance evidence through the product",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1297,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "techniques-weighted-blends-confidence-mix-29",
+          "label": "Techniques: weighted blends, confidence mix",
+          "display": "Weighted + span-verify",
+          "phase": "Score",
+          "chip": "Final score",
+          "action": "Blend design + OE with confidence floor",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1419,
+            "y": 395,
+            "panel": 4
+          }
+        },
+        {
+          "id": "loop-re-score-continuously-30",
+          "label": "Loop - re-score continuously",
+          "display": "Loop - re-score continuously",
+          "phase": "Score",
+          "chip": "Keep scoring",
+          "action": "Re-score continuously - not audit season",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 809,
+            "y": 539,
+            "panel": 4
+          }
+        },
+        {
+          "id": "output-living-scores-not-audit-season-snapshots-31",
+          "label": "Output: living scores - not audit-season snapshots",
+          "display": "Living dashboard",
+          "phase": "Score",
+          "chip": "Keep scoring",
+          "action": "Re-score continuously - not audit season",
+          "icon": "assets/workflow-arch/iso/iso-score-gauges.png",
+          "layout": {
+            "x": 1114,
+            "y": 539,
+            "panel": 4
+          }
+        },
+        {
+          "id": "human-capa-close-revalidate-assessment-32",
+          "label": "Human CAPA close → revalidate assessment",
+          "display": "Human CAPA close → revalidate",
+          "phase": "Collect",
+          "chip": "Upload files",
+          "action": "Intake artefact into tenant workspace",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 1419,
+            "y": 539,
+            "panel": 4
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "inputs-enter-the-scoring-plane-0",
+          "to": "human-assessment-maturity-answers-1"
+        },
+        {
+          "from": "human-assessment-maturity-answers-1",
+          "to": "policy-text-pdf-zt-gated-2"
+        },
+        {
+          "from": "policy-text-pdf-zt-gated-2",
+          "to": "scope-before-score-3"
+        },
+        {
+          "from": "scope-before-score-3",
+          "to": "output-scoped-control-set-for-scoring-4"
+        },
+        {
+          "from": "output-scoped-control-set-for-scoring-4",
+          "to": "technique-verified-org-fact-predicates-5"
+        },
+        {
+          "from": "technique-verified-org-fact-predicates-5",
+          "to": "retrieve-candidates-hybrid-rag-6"
+        },
+        {
+          "from": "retrieve-candidates-hybrid-rag-6",
+          "to": "output-ranked-hits-met-partial-gap-labels-7"
+        },
+        {
+          "from": "output-ranked-hits-met-partial-gap-labels-7",
+          "to": "techniques-bm25-cosine-embed-keyword-atom-gates-8"
+        },
+        {
+          "from": "techniques-bm25-cosine-embed-keyword-atom-gates-8",
+          "to": "defensible-rank-route-pmcr-9"
+        },
+        {
+          "from": "defensible-rank-route-pmcr-9",
+          "to": "output-route-signed-receipt-mapping-fabric-10"
+        },
+        {
+          "from": "output-route-signed-receipt-mapping-fabric-10",
+          "to": "techniques-weighted-sum-span-verify-conflict-pen-11"
+        },
+        {
+          "from": "techniques-weighted-sum-span-verify-conflict-pen-11",
+          "to": "design-alignment-report-12"
+        },
+        {
+          "from": "design-alignment-report-12",
+          "to": "output-report-ready-oe-capa-13"
+        },
+        {
+          "from": "output-report-ready-oe-capa-13",
+          "to": "technique-coverage-first-rubric-design-only-14"
+        },
+        {
+          "from": "technique-coverage-first-rubric-design-only-14",
+          "to": "parallel-design-path-assessment-gauges-15"
+        },
+        {
+          "from": "parallel-design-path-assessment-gauges-15",
+          "to": "output-design-posture-for-dual-blend-16"
+        },
+        {
+          "from": "output-design-posture-for-dual-blend-16",
+          "to": "techniques-vlookup-maturity-xlookup-importance-b-17"
+        },
+        {
+          "from": "techniques-vlookup-maturity-xlookup-importance-b-17",
+          "to": "parallel-oe-path-ccf-monitors-18"
+        },
+        {
+          "from": "parallel-oe-path-ccf-monitors-18",
+          "to": "output-operating-posture-fail-at-risk-items-19"
+        },
+        {
+          "from": "output-operating-posture-fail-at-risk-items-19",
+          "to": "techniques-rule-thresholds-section-rollups-20"
+        },
+        {
+          "from": "techniques-rule-thresholds-section-rollups-20",
+          "to": "evidence-freshness-scoring-21"
+        },
+        {
+          "from": "evidence-freshness-scoring-21",
+          "to": "output-freshness-bands-pmcr-e-sub-score-22"
+        },
+        {
+          "from": "output-freshness-bands-pmcr-e-sub-score-22",
+          "to": "technique-per-source-ttl-defaults-23"
+        },
+        {
+          "from": "technique-per-source-ttl-defaults-23",
+          "to": "risk-plane-scoring-24"
+        },
+        {
+          "from": "risk-plane-scoring-24",
+          "to": "output-residual-risk-vuln-priorities-25"
+        },
+        {
+          "from": "output-residual-risk-vuln-priorities-25",
+          "to": "techniques-5-5-matrix-bfs-attack-paths-kris-26"
+        },
+        {
+          "from": "techniques-5-5-matrix-bfs-attack-paths-kris-26",
+          "to": "capstone-blend-display-honesty-27"
+        },
+        {
+          "from": "capstone-blend-display-honesty-27",
+          "to": "output-dashboard-board-pack-headline-scores-28"
+        },
+        {
+          "from": "output-dashboard-board-pack-headline-scores-28",
+          "to": "techniques-weighted-blends-confidence-mix-29"
+        },
+        {
+          "from": "techniques-weighted-blends-confidence-mix-29",
+          "to": "loop-re-score-continuously-30"
+        },
+        {
+          "from": "loop-re-score-continuously-30",
+          "to": "output-living-scores-not-audit-season-snapshots-31"
+        },
+        {
+          "from": "output-living-scores-not-audit-season-snapshots-31",
+          "to": "human-capa-close-revalidate-assessment-32"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Score",
+          "step": "0-1",
+          "blurb": "Scope before score",
+          "itemCount": 6
+        },
+        {
+          "title": "Score",
+          "step": "2-3",
+          "blurb": "Retrieve and rank (Hybrid RAG / PMCR)",
+          "itemCount": 6
+        },
+        {
+          "title": "Score",
+          "step": "4-5",
+          "blurb": "Design path",
+          "itemCount": 6
+        },
+        {
+          "title": "Score",
+          "step": "6-7",
+          "blurb": "Operate path",
+          "itemCount": 6
+        },
+        {
+          "title": "Score",
+          "step": "8-10",
+          "blurb": "Capstone blend and continuous loop",
+          "itemCount": 9
+        }
+      ],
+      "title": "Score risk: Holistic scoring architecture",
+      "lead": "Holistic scoring as parallel design and operate paths that merge into capstone blend, truthful display, and continuous re-score."
+    },
+    "remediate": {
+      "stageId": "remediate",
+      "nodes": [
+        {
+          "id": "compliance-monitors-ccm-0",
+          "label": "Compliance monitors / CCM",
+          "display": "Compliance monitors / CCM",
+          "phase": "Collect",
+          "chip": "Live checks",
+          "action": "Stream continuous control checks",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 78,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "vapt-scans-1",
+          "label": "VAPT scans",
+          "display": "VAPT scans",
+          "phase": "Collect",
+          "chip": "Scan findings",
+          "action": "Ingest VAPT findings for scoring",
+          "icon": "assets/workflow-arch/iso/iso-vapt-scan.png",
+          "layout": {
+            "x": 210,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "ccf-continuous-checks-2",
+          "label": "CCF continuous checks",
+          "display": "CCF continuous",
+          "phase": "Collect",
+          "chip": "Auto checks",
+          "action": "Queue continuous compliance checks",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 342,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "monitor-remediation-items-3",
+          "label": "Monitor remediation items",
+          "display": "Monitor remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 482,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "vapt-vuln-remediation-4",
+          "label": "VAPT vuln remediation",
+          "display": "VAPT vuln remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-vapt-scan.png",
+          "layout": {
+            "x": 614,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "ccf-remediation-items-5",
+          "label": "CCF remediation items",
+          "display": "CCF remediation",
+          "phase": "Gap",
+          "chip": "Open a gap",
+          "action": "Turn live fail into remediation item",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 746,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "findings-capa-6",
+          "label": "Findings + CAPA",
+          "display": "Findings + CAPA",
+          "phase": "Gap",
+          "chip": "Start CAPA",
+          "action": "Open finding with CAPA lifecycle",
+          "icon": "assets/workflow-arch/iso/iso-gap-capa.png",
+          "layout": {
+            "x": 878,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "my-work-user-tasks-7",
+          "label": "My Work / user tasks",
+          "display": "My Work / user tasks",
+          "phase": "Gap",
+          "chip": "Assign owner",
+          "action": "Queue owned work with due dates",
+          "icon": "assets/workflow-arch/iso/iso-my-work.png",
+          "layout": {
+            "x": 1010,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "fix-in-environment-8",
+          "label": "Fix in environment",
+          "display": "Fix in environment",
+          "phase": "Close",
+          "chip": "Fix it",
+          "action": "Remediate in environment with proof",
+          "icon": "assets/workflow-arch/iso/iso-close-capa.png",
+          "layout": {
+            "x": 1150,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "capa-closed-item-resolved-9",
+          "label": "CAPA closed / item resolved",
+          "display": "CAPA closed",
+          "phase": "Close",
+          "chip": "Close it",
+          "action": "Close only when evidence revalidates",
+          "icon": "assets/workflow-arch/iso/iso-close-capa.png",
+          "layout": {
+            "x": 1282,
+            "y": 186,
+            "panel": 2
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "compliance-monitors-ccm-0",
+          "to": "vapt-scans-1"
+        },
+        {
+          "from": "vapt-scans-1",
+          "to": "ccf-continuous-checks-2"
+        },
+        {
+          "from": "ccf-continuous-checks-2",
+          "to": "monitor-remediation-items-3"
+        },
+        {
+          "from": "monitor-remediation-items-3",
+          "to": "vapt-vuln-remediation-4"
+        },
+        {
+          "from": "vapt-vuln-remediation-4",
+          "to": "ccf-remediation-items-5"
+        },
+        {
+          "from": "ccf-remediation-items-5",
+          "to": "findings-capa-6"
+        },
+        {
+          "from": "findings-capa-6",
+          "to": "my-work-user-tasks-7"
+        },
+        {
+          "from": "my-work-user-tasks-7",
+          "to": "fix-in-environment-8"
+        },
+        {
+          "from": "fix-in-environment-8",
+          "to": "capa-closed-item-resolved-9"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Collect",
+          "step": "1",
+          "blurb": "Live signals",
+          "itemCount": 3
+        },
+        {
+          "title": "Gap",
+          "step": "4",
+          "blurb": "Gap becomes work",
+          "itemCount": 5
+        },
+        {
+          "title": "Close",
+          "step": "5",
+          "blurb": "Fix and close with proof",
+          "itemCount": 2
+        }
+      ],
+      "title": "Remediate: Gap becomes work and Close",
+      "lead": "Live signals become Findings and CAPA work in My Work, then fix in environment and close."
+    },
+    "monitor": {
+      "stageId": "monitor",
+      "nodes": [
+        {
+          "id": "scheduler-ticks-0",
+          "label": "Scheduler ticks",
+          "display": "Scheduler ticks",
+          "phase": "Re-check",
+          "chip": "Timer tick",
+          "action": "Scheduler re-ticks monitors and CCF",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 78,
+            "y": 186,
+            "panel": 0
+          }
+        },
+        {
+          "id": "monitors-ccm-1",
+          "label": "Monitors / CCM",
+          "display": "Monitors / CCM",
+          "phase": "Collect",
+          "chip": "Live checks",
+          "action": "Stream continuous control checks",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 318,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "ccf-2",
+          "label": "CCF",
+          "display": "CCF",
+          "phase": "Re-check",
+          "chip": "Check again",
+          "action": "Re-check operating posture live",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 450,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "evidence-fabric-3",
+          "label": "Evidence fabric",
+          "display": "Evidence fabric",
+          "phase": "Gate",
+          "chip": "Store proof",
+          "action": "Store evidence artefacts with lineage",
+          "icon": "assets/workflow-arch/iso/iso-evidence-fabric.png",
+          "layout": {
+            "x": 582,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "freshness-stale-4",
+          "label": "Freshness / stale",
+          "display": "Freshness / stale",
+          "phase": "Gate",
+          "chip": "Is it fresh?",
+          "action": "Band evidence fresh / aging / stale",
+          "icon": "assets/workflow-arch/iso/iso-freshness-ledger.png",
+          "layout": {
+            "x": 714,
+            "y": 186,
+            "panel": 1
+          }
+        },
+        {
+          "id": "human-uploads-5",
+          "label": "Human uploads",
+          "display": "Human uploads",
+          "phase": "Collect",
+          "chip": "Upload files",
+          "action": "Intake artefact into tenant workspace",
+          "icon": "assets/workflow-arch/iso/iso-collect-intake.png",
+          "layout": {
+            "x": 854,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "endpoint-agents-6",
+          "label": "Endpoint agents",
+          "display": "Endpoint agents",
+          "phase": "Collect",
+          "chip": "From devices",
+          "action": "Register endpoint agent signals",
+          "icon": "assets/workflow-arch/iso/iso-endpoint.png",
+          "layout": {
+            "x": 986,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "cloud-connectors-s3-7",
+          "label": "Cloud connectors / S3",
+          "display": "Cloud connectors",
+          "phase": "Collect",
+          "chip": "From cloud",
+          "action": "Pull cloud evidence into the gate",
+          "icon": "assets/workflow-arch/iso/iso-cloud.png",
+          "layout": {
+            "x": 1118,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "compliance-monitors-ccm-8",
+          "label": "Compliance monitors / CCM",
+          "display": "Compliance monitors / CCM",
+          "phase": "Collect",
+          "chip": "Live checks",
+          "action": "Stream continuous control checks",
+          "icon": "assets/workflow-arch/iso/iso-recheck-monitor.png",
+          "layout": {
+            "x": 1250,
+            "y": 186,
+            "panel": 2
+          }
+        },
+        {
+          "id": "vapt-scans-9",
+          "label": "VAPT scans",
+          "display": "VAPT scans",
+          "phase": "Collect",
+          "chip": "Scan findings",
+          "action": "Ingest VAPT findings for scoring",
+          "icon": "assets/workflow-arch/iso/iso-vapt-scan.png",
+          "layout": {
+            "x": 854,
+            "y": 352,
+            "panel": 2
+          }
+        },
+        {
+          "id": "policies-mapping-pmcr-10",
+          "label": "Policies / mapping / PMCR",
+          "display": "Policies / PMCR",
+          "phase": "Collect",
+          "chip": "Policies in",
+          "action": "Load policies for PMCR review",
+          "icon": "assets/workflow-arch/iso/iso-policy-map.png",
+          "layout": {
+            "x": 1052,
+            "y": 352,
+            "panel": 2
+          }
+        },
+        {
+          "id": "ccf-continuous-checks-11",
+          "label": "CCF continuous checks",
+          "display": "CCF continuous",
+          "phase": "Collect",
+          "chip": "Auto checks",
+          "action": "Queue continuous compliance checks",
+          "icon": "assets/workflow-arch/iso/iso-trust-center.png",
+          "layout": {
+            "x": 1250,
+            "y": 352,
+            "panel": 2
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "scheduler-ticks-0",
+          "to": "monitors-ccm-1"
+        },
+        {
+          "from": "monitors-ccm-1",
+          "to": "ccf-2"
+        },
+        {
+          "from": "ccf-2",
+          "to": "evidence-fabric-3"
+        },
+        {
+          "from": "evidence-fabric-3",
+          "to": "freshness-stale-4"
+        },
+        {
+          "from": "freshness-stale-4",
+          "to": "human-uploads-5"
+        },
+        {
+          "from": "human-uploads-5",
+          "to": "endpoint-agents-6"
+        },
+        {
+          "from": "endpoint-agents-6",
+          "to": "cloud-connectors-s3-7"
+        },
+        {
+          "from": "cloud-connectors-s3-7",
+          "to": "compliance-monitors-ccm-8"
+        },
+        {
+          "from": "compliance-monitors-ccm-8",
+          "to": "vapt-scans-9"
+        },
+        {
+          "from": "vapt-scans-9",
+          "to": "policies-mapping-pmcr-10"
+        },
+        {
+          "from": "policies-mapping-pmcr-10",
+          "to": "ccf-continuous-checks-11"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Scheduler",
+          "step": "1",
+          "blurb": "Scheduler ticks",
+          "itemCount": 1
+        },
+        {
+          "title": "Verify",
+          "step": "2",
+          "blurb": "Live verification targets",
+          "itemCount": 4
+        },
+        {
+          "title": "Collect",
+          "step": "3",
+          "blurb": "Loop back into Collect intakes",
+          "itemCount": 7
+        }
+      ],
+      "title": "Monitor live: Re-check architecture",
+      "lead": "Scheduler ticks fan out to live verification targets, then loop back into Collect intakes."
+    }
+  }
+}

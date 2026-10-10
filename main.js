@@ -491,10 +491,10 @@
       "diagram": "assets/workflow-arch/monitor.svg",
       "components": [
         "Scheduler ticks",
-        "→ Monitors / CCM",
-        "→ CCF",
-        "→ Evidence fabric",
-        "→ Freshness / stale"
+        "Monitors / CCM",
+        "CCF",
+        "Evidence fabric",
+        "Freshness / stale"
       ],
       "stores": [
         "Human uploads",
@@ -812,7 +812,7 @@
     let archSwitchTimer = 0;
     let archScrollTimer = 0;
     let archSwitchGen = 0;
-    const ARCH_CACHE = "69";
+    const ARCH_CACHE = "75";
     const ARCH_FADE_MS = 720;
     const archSlides = document.getElementById("wf-arch-slides");
     const archHead = arch ? arch.querySelector(".workflow-arch-head") : null;
@@ -1099,9 +1099,11 @@
           open +
           '" aria-expanded="' +
           open +
-          '">' +
+          '"><span class="wf-flow-num" aria-hidden="true">' +
+          (i + 1) +
+          '</span><span class="wf-flow-label">' +
           escapeHtml(stageLabel(s)) +
-          "</button>" +
+          "</span></button>" +
           (i < WORKFLOW_STEPS.length - 1
             ? '<span class="workflow-flow-arrow" aria-hidden="true"></span>'
             : "")
@@ -2573,6 +2575,42 @@
       { rootMargin: "-28% 0px -55% 0px", threshold: [0.08, 0.2, 0.4] }
     );
     sections.forEach((s) => io.observe(s.el));
+  })();
+
+  /* Section reveal — presence without blocking reduced-motion users */
+  (function initScrollReveal() {
+    if (typeof IntersectionObserver === "undefined") return;
+    var reduce = false;
+    try {
+      reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    } catch (_) {}
+    var targets = document.querySelectorAll(
+      "#main > section .wrap, #main > section .platform-band, #main > section .solve-band-inner"
+    );
+    if (!targets.length) return;
+    if (reduce) {
+      targets.forEach(function (el) {
+        el.classList.add("reveal-on-scroll", "is-visible");
+      });
+      return;
+    }
+    targets.forEach(function (el) {
+      el.classList.add("reveal-on-scroll");
+    });
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    );
+    targets.forEach(function (el) {
+      io.observe(el);
+    });
   })();
 
   /* Mild BGM: autoplay on open; always stop when tab/window loses the user. */

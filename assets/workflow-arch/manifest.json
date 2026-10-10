@@ -114,10 +114,10 @@
     "diagram": "assets/workflow-arch/monitor.svg",
     "components": [
       "Scheduler ticks",
-      "→ Monitors / CCM",
-      "→ CCF",
-      "→ Evidence fabric",
-      "→ Freshness / stale"
+      "Monitors / CCM",
+      "CCF",
+      "Evidence fabric",
+      "Freshness / stale"
     ],
     "stores": [
       "Human uploads",
